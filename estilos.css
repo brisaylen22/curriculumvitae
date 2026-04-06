@@ -1,0 +1,102 @@
+/* CSS DOCUMENT */
+@charset "UTF-8";
+
+/*configuraciones generales*/
+
+@font-face {
+    font-family: "Mori Extralight";
+    src: url(fonts/PPMori-Extralight.otf) format(opentype);
+    font-weight: light;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Mori Extralight Italic";
+    src: url(fonts/PPMori-ExtralightItalic.otf) format(opentype);
+    font-weight: light;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Mori Regular";
+    src: url(fonts/PPMori-Regular.otf) format(opentype);
+    font-weight: regular;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Mori Regular Italic";
+    src: url(fonts/PPMori-RegularItalic.otf) format(opentype);
+    font-weight: regular;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Mori Semibold";
+    src: url(fonts/PPMori-SemiBold.otf) format(opentype);
+    font-weight: semibold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Mori Semibold Italic";
+    src: url(fonts/PPMori-SemiBoldItalic.otf) format(opentype);
+    font-weight: semibold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Tropiland";
+    src: url(fonts/TropiLand-L3MPg.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*aca empiezan las aplicaciones*/
+
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+    list-style: none;
+    background-color: #ffeeac;
+}
+
+a{
+    font-family: 'Tropiland', "Climate Crisis", sans-serif;
+    font-size: 2rem;
+    color:rgb(230, 2, 74)
+}
+
+h1{
+    font-family: 'Mori Semibold', "IBM Plex Sans", sans-serif;
+    color:rgb(237, 109, 11);
+    font-size: 2.4rem;
+    line-height: 2rem;
+}
+
+h2, h3{
+    font-family: 'Mori Extralight', "IBM PLex Sans", sans-serif;
+    color:rgb(196, 57, 29)
+}
+
+p, li{
+    text-wrap-style: balance;
+}
+
+#presentacion {
+    background-image: url(img/textura.jpg);
+    background-size: contain;
+    background-repeat: repeat-x;
+    padding: 50px ;
+}
+
+#presentacion p {
+    font-family: 'Mori Semibold Italic', "IBM Plex Sans", sans-serif;
+    font-size:  1.3rem;
+}
+
+footer {
+    font-family: 'Mori Semibold', "IBM Plex Sans", sans-serif;
+    padding: 5px;
+    background-color: rgb(200, 120, 0);
+    color: rgb(255, 255, 255);
+}
