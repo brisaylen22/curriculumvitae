@@ -56,7 +56,6 @@
 
 body {
     font-family: "IBM Plex Sans", sans-serif;
-    list-style: none;
     background-color: #ffeeac;
 }
 
@@ -71,27 +70,49 @@ h1{
     color:rgb(237, 109, 11);
     font-size: 2.4rem;
     line-height: 2rem;
+    margin: 50px 40px 10px;
 }
 
 h2, h3{
     font-family: 'Mori Extralight', "IBM PLex Sans", sans-serif;
-    color:rgb(196, 57, 29)
+    color:rgb(196, 57, 29);
+    padding: 0px 41px 0px;
 }
 
 p, li{
     text-wrap-style: balance;
+    list-style: none;
+}
+
+li{
+    padding: 0px 30px 5px;
+}
+
+p{
+    padding: 0px 60px 0px;
 }
 
 #presentacion {
     background-image: url(img/textura.jpg);
-    background-size: contain;
-    background-repeat: repeat-x;
-    padding: 50px ;
+    background-size: 600px;
+    background-repeat: repeat;
+    min-height: 10vh;
+    padding: 60px 0px 80px;
+}
+
+#presentacion img {
+    padding: 30px 53px 0px;
 }
 
 #presentacion p {
     font-family: 'Mori Semibold Italic', "IBM Plex Sans", sans-serif;
     font-size:  1.3rem;
+    line-height: 1.8rem;
+    min-width: 300px;
+}
+
+#presentacion h1 {
+    padding: 15px;
 }
 
 footer {
