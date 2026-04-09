@@ -54,70 +54,127 @@
 
 /*aca empiezan las aplicaciones*/
 
+* {
+    margin: 0;
+}
+
 body {
     font-family: "IBM Plex Sans", sans-serif;
-    background-color: #ffeeac;
+    background-color: #ffffe1;
 }
 
-a{
+a {
     font-family: 'Tropiland', "Climate Crisis", sans-serif;
-    font-size: 2rem;
-    color:rgb(230, 2, 74)
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
 }
 
-h1{
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+h1 {
     font-family: 'Mori Semibold', "IBM Plex Sans", sans-serif;
-    color:rgb(237, 109, 11);
-    font-size: 2.4rem;
+    color: rgb(237, 109, 11);
+    font-size: 2.1rem;
     line-height: 2rem;
     margin: 50px 40px 10px;
 }
 
-h2, h3{
+h2 {
     font-family: 'Mori Extralight', "IBM PLex Sans", sans-serif;
-    color:rgb(196, 57, 29);
-    padding: 0px 41px 0px;
+    color: rgb(196, 57, 29);
+    margin: 20px 41px 0px;
+    font-size: 1.3rem;
 }
 
-p, li{
-    text-wrap-style: balance;
+h3 {
+    font-family: 'Mori Extralight', "IBM PLex Sans", sans-serif;
+    color: rgb(91, 29, 0);
+    margin: 20px 41px 0px;
+    font-size: 1rem;
+    justify-content: flex-end;
+}
+
+p, li {
     list-style: none;
+    font-size: 0.9rem;
+    padding: 10px 40px 0px;
+    text-wrap: balance;
 }
 
-li{
-    padding: 0px 30px 5px;
-}
-
-p{
-    padding: 0px 60px 0px;
-}
-
-#presentacion {
+.presentacion {
     background-image: url(img/textura.jpg);
     background-size: 600px;
     background-repeat: repeat;
     min-height: 10vh;
-    padding: 60px 0px 80px;
+    padding: 50px 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-#presentacion img {
-    padding: 30px 53px 0px;
-}
-
-#presentacion p {
+.presentacion p {
     font-family: 'Mori Semibold Italic', "IBM Plex Sans", sans-serif;
-    font-size:  1.3rem;
-    line-height: 1.8rem;
-    min-width: 300px;
-}
-
-#presentacion h1 {
-    padding: 15px;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    flex: 1;
+    min-width: 200px;
 }
 
 footer {
-    font-family: 'Mori Semibold', "IBM Plex Sans", sans-serif;
-    padding: 5px;
-    background-color: rgb(28, 17, 0);
+    font-family: 'Mori Extralight', "IBM Plex Sans", sans-serif;
+    padding: 20px 60px 25px;
+    background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    background-color: rgb(237, 109, 11);
+    padding: 10px 0px;
+}
+
+.encabezado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.resumen {
+    display: flex;
+    flex-direction: column;
+    background-color:#ffeeac;
+    padding: 0px 10px 50px;
+    flex: 1 1 100px;
+}
+
+.experiencia-formacion {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px 50px;
+    flex: 2 1 600px;
+}
+
+.cuerpo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-a, .item-b, .item-c, .item-d {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.item-1, .item-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
