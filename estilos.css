@@ -106,29 +106,33 @@ p, li {
     text-wrap: balance;
 }
 
+p {
+    font-family: "IBM Plex Sans Bold", sans-serif;
+}
+
 .presentacion {
     background-image: url(img/textura.jpg);
     background-size: 600px;
     background-repeat: repeat;
     min-height: 10vh;
-    padding: 50px 40px;
+    padding: 50px 70px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
 }
 
 .presentacion p {
     font-family: 'Mori Semibold Italic', "IBM Plex Sans", sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: 2rem;
     flex: 1;
     min-width: 200px;
+    text-wrap: auto;
 }
 
 footer {
     font-family: 'Mori Extralight', "IBM Plex Sans", sans-serif;
-    padding: 20px 60px 25px;
+    padding: 20px;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     display: flex;
@@ -177,4 +181,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+}
+
+.adobe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px 55px 0px 0px;
+    gap: 15px
 }
