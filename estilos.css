@@ -226,7 +226,6 @@ header {
 .imgproyectos {
     display: flex;
     flex-wrap: wrap;
-    text-wrap: balance;
     justify-content: space-evenly;
     gap: 40px;
 }
