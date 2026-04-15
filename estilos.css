@@ -210,7 +210,7 @@ header {
     padding: 40px 0px;
     display: flex;
     align-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* justo acá que tenés dos elementos en columna no es necesario que utilices esta propiedad, también es parte del trabajo no agregar código de más o elegir las propiedades correctas */
     justify-content: space-evenly;
 }
 
