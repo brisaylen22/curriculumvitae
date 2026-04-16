@@ -16,11 +16,10 @@
         <div class="encabezado">
             <img src="img/logo.svg" alt="logotipo" width="50px" height="50px">
             <nav>
-                <a href="https://www.instagram.com/brichidg/">Instagram</a>
-                <a href="https://www.behance.net/brichi">BeHance</a>
-                <a href="https://www.linkedin.com/in/brisa-pereyra-brichi/">LinkedIn</a>
-                <a href="mailto:brisaaylen_22@hotmail.com">Correo</a>
-                <!-- Esto de "mailto" lo saqué de google, sé que no lo vimos en clase, estaría bien igual o lo borro? -->
+                <a target="blank" href="https://www.instagram.com/brichidg/">Instagram</a>
+                <a target="blank" href="https://www.behance.net/brichi">BeHance</a>
+                <a target="blank" href="https://www.linkedin.com/in/brisa-pereyra-brichi/">LinkedIn</a>
+                <a target="blank" href="mailto:brisaaylen_22@hotmail.com">Correo</a>
             </nav>
         </div>
     </header>
@@ -28,17 +27,18 @@
     <main>
         <section class="presentacion">
             <img src="img/fotomia.png" alt="Foto personal" width="160px" height="160px">
-            <p>¡Hola! Soy Brisa, una persona resolutiva, proactiva, responsable, comprometida y creativa. Mi
-                experiencia laboral y formación universitaria me impulsaron a buscar soluciones eficaces a todo tipo de
-                problemáticas con criterio y responsabilidad, utilizando todas las herramientas técnicas y proyectuales
-                aprendidas, a investigar contextos, al aprendizaje constante, a actuar bajo presión y al intercambio
-                permanente con otros. Estoy abierta a la búsqueda de nuevos puestos desfiantes que me sirvan para expandirme
-                profesionalmente.</p>
+            <div class="presentaciontxt">
+                <h1>¡Hola! Mi nombre es Brisa Pereyra</h1>
+                <p> Soy una persona resolutiva, proactiva, responsable, comprometida y creativa. Mi
+                    experiencia y formación me impulsaron a buscar soluciones eficaces a todo tipo de
+                    problemass con criterio y responsabilidad, utilizando todas las herramientas técnicas y proyectuales
+                    aprendidas, al aprendizaje constante, a actuar bajo presión y al intercambio con otros.</p>
+            </div>
         </section>
         <section class="cuerpo">
             <article class="resumen">
                 <div>
-                    <h1>FORTALEZAS</h1>
+                    <h2>FORTALEZAS</h2>
                     <ol>
                         <li>Comunicación efectiva</li>
                         <li>Adaptabilidad y flexibilidad</li>
@@ -49,15 +49,18 @@
                     </ol>
                 </div>
                 <div>
-                    <h1>HABILIDADES</h1>
-                    <ol>
-                        <li>Adobe creative suite</li>
-                        <div class="adobe">
+                    <h2>HABILIDADES</h2>
+                    <div class="adobe">
+                        <!-- Aló! acá la corrección fue que dentro de una ol o ul sólo pueden haber etiquetas li. Quedó con dos etiquetas div juntas porque de lo contrario, al expandir la pantalla a 1920x1080, los logos subían y no era la idea, esta fue la unica forma que encontré de arreglarlo, pasando las propiedades css que antes tenía en "adobe" a "logosadobe" y modificando esta "p" para que se asemeje con los otros "li", estaría bien así? -->
+                        <p>Adobe creative suite</p>
+                        <div class="logosadobe">
                             <img src="img/logops.png" alt="Photoshop" width="30px" height="30px">
                             <img src="img/logoai.png" alt="Photoshop" width="30px" height="30px">
                             <img src="img/logoae.png" alt="Photoshop" width="30px" height="30px">
                             <img src="img/logoid.png" alt="Photoshop" width="30px" height="30px">
                         </div>
+                    </div>
+                    <ol>
                         <li>Uso básico de Figma</li>
                         <li>Conocimiento en fotografía</li>
                         <li>Diseño editorial, branding y redes</li>
@@ -66,28 +69,30 @@
                     </ol>
                 </div>
                 <div>
-                    <h1>IDIOMAS</h1>
+                    <h2>IDIOMAS</h2>
                     <ol>
                         <li>Inglés C1</li>
                         <li>Francés A1</li>
                     </ol>
                 </div>
-                <div>
-                    <h1>PROYECTOS</h1>
-                    <h2>Participación en “La maratón”</h2>
-                    <p>Proyecto colaborativo de ilustración</p>
-                    <h2>Todo eso que sobra</h2>
-                    <p>Libro de artista presentado en UNLa</p>
-                    <h2>Participación en URGE!</h2>
-                    <p>Afiche expuesto en MUD</p>
+                <div class="proyectos">
+                    <h2>PROYECTOS</h2>
+                    <ol>
+                        <li>Participación en “La maratón”</li>
+                        <p>Proyecto colaborativo de ilustración</p>
+                        <li>Todo eso que sobra</li>
+                        <p>Libro de artista presentado en UNLa</p>
+                        <li>Participación en URGE!</li>
+                        <p>Afiche expuesto en MUD</p>
+                    </ol>
                 </div>
             </article>
-            <article class="experiencia-formacion">
+            <article class="experiencia-formacion">  <!-- acá intenté reorganizarlo dentro de <li> pero me hice demasiado quilombo y se desacomdó todo -->
                 <div>
-                    <h1>✧ EXPERIENCIA ✧</h1>
+                    <h2>✧ EXPERIENCIA ✧</h2>
                     <div class="item-1">
-                        <h2>Responsable de sector - NOMAD</h2>
-                        <h3>2022 - Presente</h3>
+                        <h3>Responsable de sector - NOMAD</h3>
+                        <h4>2022 - Presente</h4>
                     </div>
                     <p>Empresa con base en Dubái especializada en la reventa internacional de tickets para todo tipo de
                         eventos, operando a través de una red de intermediarios globales como Viagogo o Gigsberg. Me
@@ -104,8 +109,8 @@
                         <li>Capacitación y formación a nuevos miembros del equipo.</li>
                     </ul>
                     <div class="item-2">
-                        <h2>Auxiliar docente - UNLa</h2>
-                        <h3>2023 - 2025</h3>
+                        <h3>Auxiliar docente - UNLa</h3>
+                        <h4>2023 - 2025</h4>
                     </div>
                     <p>En la Licenciatura en Diseño y Comunicación Visual, fui parte del equipo docente en las materias
                         Taller de Diseño I (Max Rompo) y Taller de Diseño II (Javier Reboursin), un espacio en el cual
@@ -123,56 +128,56 @@
                     </ul>
                 </div>
                 <div>
-                    <h1>✧ FORMACIÓN ✧</h1>
+                    <h2>✧ FORMACIÓN ✧</h2>
                     <div class="item-a">
-                        <h2>Licenciatura en Diseño y Comunicación visual</h2>
-                        <h3>2022 - Presente</h3>
+                        <h3>Licenciatura en Diseño y Comunicación visual</h3>
+                        <h4>2022 - Presente</h4>
                     </div>
                     <p>Universidad Nacional de Lanús</p>
                     <div class="item-b">
-                        <h2>Curso de animación:This is animation</h2>
-                        <h3>2025</h3>
+                        <h3>Curso de animación:This is animation</h3>
+                        <h4>2025</h4>
                     </div>
                     <p>Sony Pictures Animation</p>
                     <div class="item-c">
-                        <h2>Introducción al After Effects</h2>
-                        <h3>2022</h3>
+                        <h3>Introducción al After Effects</h3>
+                        <h4>2022</h4>
                     </div>
                     <p>Enter digital school</p>
                     <div class="item-d">
-                        <h2>Bachillerato orientado en lenguas extranjeras</h2>
-                        <h3>2016-2021</h3>
+                        <h3>Bachillerato orientado en lenguas extranjeras</h3>
+                        <h4>2016-2021</h4>
                     </div>
                     <p>E.E.S. N°7 - Lanús</p>
                 </div>
             </article>
             <article class="imagenes-proyectos">
-                    <h1>✧ GALERÍA DE PROYECTOS DESTACADOS ✧ </h1>
+                <h2>✧ GALERÍA DE PROYECTOS DESTACADOS ✧ </h2>
                 <div class="imgproyectos">
-                <figure>
-                    <img src="img/proy1.jpg" alt="SHOT" width="360px" height="203px">
-                    <figcaption>Shot: Juego de cartas inspirado en el UNO</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/proy2.jpg" alt="LA MARATON" width="360px" height="203px">
-                    <figcaption>La Maratón: Proyecto de ilustración</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/proy3.jpg" alt="URGE" width="360px" height="203px">
-                    <figcaption>Urge!: Afiche expuesto en el MUD</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/proy4.jpg" alt="Museo de la interferencia" width="360px" height="203px">
-                    <figcaption>Museo de la interferencia, identidad</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/proy5.jpg" alt="Microplásticos" width="360px" height="203px">
-                    <figcaption>Microplásticos: Proyecto editorial</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/proy6.jpg" alt="Todo eso que sobra" width="360px" height="203px">
-                    <figcaption>Todo eso que sobra: Proyecto editorial</figcaption>
-                </figure>
+                    <figure>
+                        <img src="img/proy1.jpg" alt="SHOT" width="360px" height="203px">
+                        <figcaption>Shot: Juego de cartas inspirado en el UNO</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/proy2.jpg" alt="LA MARATON" width="360px" height="203px">
+                        <figcaption>La Maratón: Proyecto de ilustración</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/proy3.jpg" alt="URGE" width="360px" height="203px">
+                        <figcaption>Urge!: Afiche expuesto en el MUD</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/proy4.jpg" alt="Museo de la interferencia" width="360px" height="203px">
+                        <figcaption>Museo de la interferencia, identidad</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/proy5.jpg" alt="Microplásticos" width="360px" height="203px">
+                        <figcaption>Microplásticos: Proyecto editorial</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/proy6.jpg" alt="Todo eso que sobra" width="360px" height="203px">
+                        <figcaption>Todo eso que sobra: Proyecto editorial</figcaption>
+                    </figure>
                 </div>
             </article>
         </section>

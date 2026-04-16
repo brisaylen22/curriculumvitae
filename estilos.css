@@ -78,20 +78,27 @@ nav {
 
 h1 {
     font-family: 'Mori Semibold', "IBM Plex Sans", sans-serif;
+    color: rgb(255, 85, 0);
+    font-size: 1.7rem;
+    padding: 20px 40px 0px;
+}
+
+h2 {
+    font-family: 'Mori Semibold', "IBM Plex Sans", sans-serif;
     color: rgb(237, 109, 11);
     font-size: 2.1rem;
     line-height: 2rem;
     padding: 50px 40px 10px;
 }
 
-h2 {
+h3 {
     font-family: 'Mori Extralight', "IBM PLex Sans", sans-serif;
     color: rgb(196, 57, 29);
     padding: 20px 41px 0px;
     font-size: 1.3rem;
 }
 
-h3 {
+h4 {
     font-family: 'Mori Extralight', "IBM PLex Sans", sans-serif;
     color: rgb(91, 29, 0);
     margin: 20px 41px 0px;
@@ -99,7 +106,7 @@ h3 {
     justify-content: flex-end;
 }
 
-p, 
+p,
 li {
     list-style: none;
     font-size: 0.9rem;
@@ -127,10 +134,18 @@ p {
     font-family: 'Mori Semibold Italic', "IBM Plex Sans", sans-serif;
     font-size: 1.1rem;
     line-height: 2rem;
-    flex: 1;
     min-width: 200px;
     text-wrap: auto;
 }
+
+.presentaciontxt {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 200px;
+}
+
 
 footer {
     font-family: 'Mori Extralight', "IBM Plex Sans", sans-serif;
@@ -197,29 +212,38 @@ header {
 
 .adobe {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0px 0px 0px 40px
+}
+
+.logosadobe {
+    display: flex;
     justify-content: flex-start;
     padding: 5px 5px 5px 40px;
     gap: 15px
 }
 
-.imagenes-proyectos{
+.adobe p {
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.imagenes-proyectos {
     width: 100%;
-    background:#ffce0a;
+    background: #ffce0a;
     margin: 0px 30px 30px;
     padding: 40px 0px;
     display: flex;
-    align-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
     justify-content: space-evenly;
 }
 
-.imagenes-proyectos h1{
-    color:black;
+.imagenes-proyectos h2 {
+    color: black;
     padding: 10px 0px 35px;
 }
 
-.imagenes-proyectos figcaption{
+.imagenes-proyectos figcaption {
     font-family: 'Mori Semibold Italic', "IBM Plex Sans", sans-serif;
 }
 
@@ -228,4 +252,11 @@ header {
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 40px;
+}
+
+.proyectos li {
+    font-family: 'Mori Extralight', "IBM PLex Sans", sans-serif;
+    color: rgb(196, 57, 29);
+    padding: 20px 0px 0px;
+    font-size: 1.1rem;
 }
