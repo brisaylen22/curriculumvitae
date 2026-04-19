@@ -152,7 +152,7 @@ p {
 
 
 footer {
-    font-family: 'Mori Extralight', "IBM Plex Sans", sans-serif;
+    font-family: 'Mori Extralight', "IBM Plex Sans", sans-serif; /* esto ya lo declaraste en la línea 121 */
     padding: 15px;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
@@ -173,7 +173,7 @@ header {
 }
 
 .resumen {
-    display: flex;
+    display: flex; /* esta columna no necesita flex ni direction */
     flex-direction: column;
     background-color: #ffeeac;
     padding: 0px 10px 50px;
@@ -239,7 +239,7 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-evenly
 }
 
 .imagenes-proyectos h2 {
