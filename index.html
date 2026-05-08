@@ -12,150 +12,60 @@
 </head>
 
 <body>
-    <header id="inicio">
+    <header>
         <div class="encabezado">
-            <img src="img/logo.svg" alt="logotipo" width="50px" height="50px">
             <nav>
-                <a target="blank" href="https://www.instagram.com/brichidg/">Instagram</a>
-                <a target="blank" href="https://www.behance.net/brichi">BeHance</a>
-                <a target="blank" href="https://www.linkedin.com/in/brisa-pereyra-brichi/">LinkedIn</a>
-                <a target="blank" href="mailto:brisaaylen_22@hotmail.com">Correo</a>
+                <a target="blank" href="https://www.instagram.com/brichidg/">PROYECTOS</a>
+                <a target="blank" href="https://www.behance.net/brichi">CONTACTO</a>
+                <a href="#" class="logo">
+                    <img src="img/logo.svg" class="logo-base" alt="logo">
+                    <img src="img/logoamarillo.svg" class="logo-hover" alt="logo">
+                </a>
+                <a href="formacion.html">FORMACIÓN</a>
+                <a href="experiencia.html">EXPERIENCIA</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="presentacion">
-            <img src="img/fotomia.png" alt="Foto personal" width="160px" height="160px">
-            <div class="presentaciontxt">
-                <h1>¡Hola! Mi nombre es Brisa Pereyra</h1>
-                <p> Soy una persona resolutiva, proactiva, responsable, comprometida y creativa. Mi
-                    experiencia y formación me impulsaron a buscar soluciones eficaces a todo tipo de
-                    problemass con criterio y responsabilidad, utilizando todas las herramientas técnicas y proyectuales
-                    aprendidas, al aprendizaje constante, a actuar bajo presión y al intercambio con otros.</p>
+        <img class="portada" src="img/portada.jpg" alt="Hola! Soy Bri">
+        <section>
+            <article class="marcapersonal">
+                <img src="img/estrella.gif" alt="estrella">
+                <blockquote> ... pero también me dicen Brichi, y esa es mi marca personal. </blockquote>
+                <img src="img/estrella.gif" alt="estrella">
+            </article>
+            <article class="diseño">
+                <h1>DISEÑO Y COMUNICACIÓN VISUAL</h1> <!-- Si bien el H1 se debería usar para lo principal y una sola vez en la pagina web, establecí dos que son lo que hago, pensando en que, si alguien busca "diseño" por ejemplo en la web, aparezca esto. Justo acá tiene recuadro y parece un blockquote pero a esta etiqueta la usé para otra cosa que me pareció más adecuada, no sé" -->
+                <p>MADE IN ARGENTINA [PERO CON INGLÉS C1, OJO]</p>
+            </article>
+            <p class="descripcion">
+                <span>
+                    <!-- acá quizás podría haber puesto un h más, entre el cambio a bold, de tamaño, y que le puse "display:block" para que haga un salto de línea, pero decidí usar un span porque es una etiqueta que está en los apuntes y no estaba usando, para sumar variedad -->
+                    ⭒ Resolutiva ⭒ Proactiva ⭒ Responsable ⭒ Comprometida ⭒ Creativa ⭒ Comunicativa ⭒ Descontracturada ⭒
+                </span>
+                Mi experiencia y formación me impulsan a encontrar soluciones a todo tipo de problemas,
+                utilizando todas las herramientas técnicas y proyectuales aprendidas e incorporadas, al aprendizaje
+                constante,
+                actuar bajo presión y el intercambio con otros.
+            </p>
+        </section>
+        <section>
+            <article class="experienciaboton">
+                <a href="experiencia.html">
+                    <h2>EXPERIENCIA LABORAL ↗</h2>
+                </a>
+            </article>
+            <article class="formacionboton">
+                <a href="formacion.html">
+                    <h2>↖ FORMACIÓN ACADÉMICA</h2>
+                </a>
+            </article>
+            <div class="resumen">
+                <h1>✦ EDITORIAL ✦ BRANDING ✦ REDES ✦ ADMINISTRACIÓN ✦ ORGANIZACIÓN ✦ </h1>
             </div>
         </section>
         <section class="cuerpo">
-            <article class="resumen">
-                <div>
-                    <h2>FORTALEZAS</h2>
-                    <ol>
-                        <li>Comunicación efectiva</li>
-                        <li>Adaptabilidad y flexibilidad</li>
-                        <li>Aprendizaje rápido</li>
-                        <li>Resolución de problemas</li>
-                        <li>Compromiso</li>
-                        <li>Creatividad</li>
-                    </ol>
-                </div>
-                <div>
-                    <h2>HABILIDADES</h2>
-                    <div class="adobe">
-                        <p>Adobe creative suite</p>
-                        <div class="logosadobe">
-                            <img src="img/logops.png" alt="Photoshop" width="30px" height="30px">
-                            <img src="img/logoai.png" alt="Photoshop" width="30px" height="30px">
-                            <img src="img/logoae.png" alt="Photoshop" width="30px" height="30px">
-                            <img src="img/logoid.png" alt="Photoshop" width="30px" height="30px">
-                        </div>
-                    </div>
-                    <ol>
-                        <li>Uso básico de Figma</li>
-                        <li>Conocimiento en fotografía</li>
-                        <li>Diseño editorial, branding y redes</li>
-                        <li>Atención al cliente</li>
-                        <li>Organización logística</li>
-                    </ol>
-                </div>
-                <div>
-                    <h2>IDIOMAS</h2>
-                    <ol>
-                        <li>Inglés C1</li>
-                        <li>Francés A1</li>
-                    </ol>
-                </div>
-                <div class="proyectos">
-                    <h2>PROYECTOS</h2>
-                    <ol>
-                        <li>
-                            <h3>Participación en “La maratón” </h3>
-                            <p>Proyecto colaborativo de ilustración</p>
-                        </li>
-                        <li>
-                            <h3>Todo eso que sobra</h3>
-                            <p>Libro de artista presentado en UNLa</p>
-                        </li>
-                        <li>
-                            <h3>Participación en URGE!</h3>
-                            <p>Afiche expuesto en MUD</p>
-                        </li>
-                    </ol>
-                </div>
-            </article>
-            <article class="experiencia-formacion">
-                <div>
-                    <h2>✧ EXPERIENCIA ✧</h2>
-                    <div class="item-1">
-                        <h3>Responsable de sector - NOMAD</h3>
-                        <h4>2022 - Presente</h4>
-                    </div>
-                    <p>Empresa con base en Dubái especializada en la reventa internacional de tickets para todo tipo de
-                        eventos, operando a través de una red de intermediarios globales como Viagogo o Gigsberg. Me
-                        permitió desarrollar habilidades como:</p>
-                    <ul>
-                        <li>Cumplimiento de tiempos de entrega y optimización del tiempo.</li>
-                        <li>Aprendizaje constante de mejoras e innovaciones que reduzcan tiempos y costos operativos, en
-                            un entorno de cambio constante y necesidad de nuevas herramientas </li>
-                        <li>Detección y resolución de incidencias logísticas, humanas o técnicas.</li>
-                        <li>Atención especial al detalle, sin perder el panorama general.</li>
-                        <li>Distribución de tareas y trabajo en equipo.</li>
-                        <li>Comunicación efectiva y en un entorno multilingüe.</li>
-                        <li>Adaptación con agilidad a contextos cambiantes.</li>
-                        <li>Capacitación y formación a nuevos miembros del equipo.</li>
-                    </ul>
-                    <div class="item-2">
-                        <h3>Auxiliar docente - UNLa</h3>
-                        <h4>2023 - 2025</h4>
-                    </div>
-                    <p>En la Licenciatura en Diseño y Comunicación Visual, fui parte del equipo docente en las materias
-                        Taller de Diseño I (Max Rompo) y Taller de Diseño II (Javier Reboursin), un espacio en el cual
-                        pude adquirir experiencia en:</p>
-                    <ul>
-                        <li>Contribución activa a los procesos de enseñanza-aprendizaje con una perspectiva crítica,
-                            colaborativa y situada.</li>
-                        <li>Desarrollo de herramientas tanto teóricas como prácticas para acompañar a los estudiantes en
-                            su formación, promoviendo la reflexión, el trabajo en equipo y la búsqueda de soluciones
-                            visuales conscientes.</li>
-                        <li>Intercambio de saberes constante con profesionales del diseño y creación de vínculos con
-                            compañeros, alumnos y otros docentes.</li>
-                        <li>Gestión de tareas, aporte de ideas para impulsar en el aprendizaje, comunicación efectiva,
-                            además de seguimiento y compromiso con los proyectos propuestos por los estudiantes.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h2>✧ FORMACIÓN ✧</h2>
-                    <div class="item-a">
-                        <h3>Licenciatura en Diseño y Comunicación visual</h3>
-                        <h4>2022 - Presente</h4>
-                    </div>
-                    <p>Universidad Nacional de Lanús</p>
-                    <div class="item-b">
-                        <h3>Curso de animación:This is animation</h3>
-                        <h4>2025</h4>
-                    </div>
-                    <p>Sony Pictures Animation</p>
-                    <div class="item-c">
-                        <h3>Introducción al After Effects</h3>
-                        <h4>2022</h4>
-                    </div>
-                    <p>Enter digital school</p>
-                    <div class="item-d">
-                        <h3>Bachillerato orientado en lenguas extranjeras</h3>
-                        <h4>2016-2021</h4>
-                    </div>
-                    <p>E.E.S. N°7 - Lanús</p>
-                </div>
-            </article>
             <article class="imagenes-proyectos">
                 <h2>✧ GALERÍA DE PROYECTOS DESTACADOS ✧ </h2>
                 <div class="imgproyectos">
@@ -186,17 +96,26 @@
                 </div>
             </article>
         </section>
-<aside>
-    <a href="#inicio"> ↑ VOLVER AL COMIENZO ↑ </a>
-</aside>
     </main>
 
     <footer>
-        <p>Cátedra Wischñevsky 2026</p>
-        <p>✧</p>
-        <p>TP1</p>
-        <p>✧</p>
-        <p>Curriculum Vitae</p>
+        <div class="logos">
+        <a target="_blank" href="https://www.behance.net/brichi">
+            <img src="img/behance.svg" alt="Behance">
+        </a>
+        <a target="_blank" href="https://www.instagram.com/brichidg/">
+            <img src="img/instagram.svg" alt="Instagram">
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/brisa-pereyra-brichi">
+            <img src="img/linkedin.svg" alt="Linkedin">
+        </a>
+        <a target="_blank" href="mailto:brisaaylen_22@hotmail.com">
+            <img src="img/mail.svg" alt="Mail">
+        </a>
+        </div>
+        <div>
+            <p>Realizado por Brisa Pereyra :)</p>
+        </div>
     </footer>
 </body>
 
