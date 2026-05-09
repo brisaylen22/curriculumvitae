@@ -1,6 +1,6 @@
-# TP1 - Pereyra Brisa
-Hola! Este es mi CV, intenté hacerlo lo más similar posible a un CV profesional que presentaría para poder ingresar a un trabajo, con formación, experiencia, y demás, para que no parezca más portfolio que CV. Aún así, le agregué la sección "Galería de proyectos destacados" y más colores e importancia tipográfica para "meterle más diseño" y además, poder usar más flexbox y más etiquetas html.
+# TP3 - Pereyra Brisa
+Hola! Este trabajo fue repensado como un portfolio personal orientado al diseño, tomando elementos de la estructura de un CV profesional (que se mantuvieron en distintos html) pero priorizando una navegación más dinámica donde el lector/usuario pueda acceder a la formación educativa y la experiencia laboral sólo si está interesado, porque lo importante son los proyectos. La idea fue combinar todo en un mismo sitio, intentando hacer un buen recorrido visual.
 
-Dentro de lo que aprendimos a hacer, también intenté que sea lo más responsive posible a pantallas más verticales, por eso al achicar la pantalla, los elementos bajan y se vuelve todo un gran scroll (está lo más prolijo que pude lograr)
+Intenté aprovechar la mayor cantidad posible de herramientas vistas en clase, especialmente el uso de flexbox, e investigué otras por mi lado que tuve ganas de probar, como el cambio de cursor. También intenté trabajar en la estructura responsive para que el sitio pudiera adaptarse a otras pantallas priorizando el scroll. (quedó lo que quedó, puede ser peor). Además, incorporé navegación interna dentro de la misma página, un formulario de contacto, hover y demás
 
-El tamaño de pantalla en la que trabajo es 1437x577, y el editor de código utilizado es VS Code.
+El tamaño de pantalla de trabajo utilizado fue 1844x871 y el editor de código empleado fue Visual Studio Code :)
