@@ -277,7 +277,7 @@ span {
     display: flex;
     flex-direction: column;
     background: #F87A63;
-    padding: 70px;
+    padding: 80px;
 }
 
 .formacion h2,
@@ -298,7 +298,23 @@ span {
 
 .formacion h3,
 .experiencia h3 {
-    padding: 10px;
+    padding: 10px 0px;
+}
+
+.item-a,
+.item-b,
+.item-c,
+.item-d {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.item-1,
+.item-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 #proyectos {
@@ -354,15 +370,15 @@ span {
 
 .animaciones {
     display: flex;
-    gap: 60px;
+    gap: 80px;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 50px;
+    padding: 0px 0px 70px 0px
 }
 
 #proyectos h2 {
     text-align: center;
-    padding: 80px 0px 0px 0px;
+    padding: 80px 0px 50px 0px;
 }
 
 .imaginacion {
@@ -429,4 +445,5 @@ form {
     align-self: flex-end;
     height: auto;
 }
+
 /* ¿existe alguna forma de que esta info efectivamente te llegue? */
