@@ -104,14 +104,14 @@ nav {
 h1 {
     font-family: 'Mori Semibold', "IBM Plex Sans", sans-serif;
     color: #FEE69C;
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     text-align: center;
 }
 
 h2 {
     font-family: 'Mori Regular', "IBM Plex Sans", sans-serif;
     color: #F87A63;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     line-height: 3rem;
 }
 
@@ -174,12 +174,12 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 60px;
+    gap: 50px 5px;
 }
-
+/*acá me convendría hacer un h5? o así está bien? jerárquicamente es menos importante que el h2, pero al h4 lo estoy usando en los otros html*/
 .cards h3 {
     font-family: 'Mango', "Climate Crisis", sans-serif;
-    font-size: 4rem;
+    font-size: 3.7rem;
 }
 
 .cards p {
@@ -210,7 +210,7 @@ header {
 
 blockquote {
     font-family: 'Mori Regular', "IBM Plex Sans", sans-serif;
-    font-size: 2.3rem;
+    font-size: 2rem;
     color: #FEE69C;
     margin: 0;
 }
@@ -241,7 +241,7 @@ blockquote {
 
 span {
     font-weight: bold;
-    font-size: 1.15rem;
+    font-size: 1.17rem;
     display: block;
 }
 
@@ -288,7 +288,7 @@ span {
 .formacion a,
 .experiencia a {
     font-family: 'Mango', "Climate Crisis", sans-serif;
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: #FEE69C;
     text-decoration: none;
     padding: 50px 0px 0px 0px;
@@ -436,12 +436,12 @@ form {
 
 .enviar {
     font-family: 'Mango', "IBM Plex Sans", sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: #000000;
     background-color: #FEE69C;
     width: auto;
     border: none;
-    padding: 20px 30px;
+    padding: 15px 25px;
     align-self: flex-end;
     height: auto;
 }
