@@ -54,13 +54,29 @@ body {
     cursor: url("img/cursor.png"), auto;
 }
 
+/*HEADER*/
+
+header {
+    background-color: #D32E05;
+    padding: 10px 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
 .encabezado a {
     font-family: 'Mango', "Climate Crisis", sans-serif;
     font-size: 2rem;
     color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 5px 0px 0px;
+}
+
+.encabezado {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 a:hover {
@@ -101,6 +117,27 @@ nav {
     align-items: center;
 }
 
+/*FOOTER*/
+
+footer {
+    padding: 20px 50px;
+    background-color: #FEE69C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    width: 50px;
+}
+
+.logos {
+    display: flex;
+    gap: 30px;
+}
+
+/*TIPOGRAFÍA*/
+
 h1 {
     font-family: 'Mori Semibold', "IBM Plex Sans", sans-serif;
     color: #FEE69C;
@@ -124,8 +161,8 @@ h3 {
 h4 {
     font-family: 'Mango', "IBM PLex Sans", sans-serif;
     color: #000000;
-    margin: 20px 41px 0px;
-    font-size: 2rem;
+    margin: 30px 20px 0px;
+    font-size: 2.2rem;
     justify-content: flex-end;
 }
 
@@ -137,45 +174,6 @@ li {
     text-wrap: balance;
     font-family: 'Mori Regular', "IBM Plex Sans", sans-serif;
 }
-
-footer {
-    padding: 20px 50px;
-    background-color: #FEE69C;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer img {
-    width: 50px;
-}
-
-.logos {
-    display: flex;
-    gap: 30px;
-}
-
-header {
-    background-color: #D32E05;
-    padding: 10px 0px;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-}
-
-.encabezado {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 50px 5px;
-}
 /*acá me convendría hacer un h5? o así está bien? jerárquicamente es menos importante que el h2, pero al h4 lo estoy usando en los otros html*/
 .cards h3 {
     font-family: 'Mango', "Climate Crisis", sans-serif;
@@ -186,6 +184,59 @@ header {
     text-wrap: auto;
     font-size: 0.9rem;
 }
+
+.diseño p {
+    color: #FEE69C;
+}
+
+span {
+    font-weight: bold;
+    font-size: 1.17rem;
+    display: block;
+}
+
+.formacion h2,
+.experiencia h2 {
+    color: #FEE69C;
+}
+
+.formacion a,
+.experiencia a {
+    font-family: 'Mango', "Climate Crisis", sans-serif;
+    font-size: 3rem;
+    color: #FEE69C;
+    text-decoration: none;
+    padding: 70px 0px 0px 0px;
+    width: 100%;
+    text-align: right;
+}
+
+.formacion h3,
+.experiencia h3 {
+    padding: 10px 0px;
+}
+
+.experienciaboton a {
+    text-decoration: none;
+}
+
+.formacionboton a {
+    text-decoration: none;
+    text-align: right;
+}
+
+#proyectos h2 {
+    text-align: center;
+    padding: 80px 0px 50px 0px;
+}
+
+#contacto h2,
+#contacto p {
+    color: #FEE69C;
+    padding: 10px;
+}
+
+/*DESARROLLO*/
 
 .portada {
     width: 100%;
@@ -225,10 +276,6 @@ blockquote {
     line-height: 4rem;
 }
 
-.diseño p {
-    color: #FEE69C;
-}
-
 .descripcion {
     display: flex;
     flex-direction: column;
@@ -239,12 +286,6 @@ blockquote {
     margin: 0 auto;
 }
 
-span {
-    font-weight: bold;
-    font-size: 1.17rem;
-    display: block;
-}
-
 .experienciaboton {
     background-color: #FEE69C;
     padding: 50px 105px;
@@ -252,18 +293,9 @@ span {
     margin: 55px 0px;
 }
 
-.experienciaboton a {
-    text-decoration: none;
-}
-
 .formacionboton {
     background-color: #FEE69C;
     padding: 50px 105px;
-}
-
-.formacionboton a {
-    text-decoration: none;
-    text-align: right;
 }
 
 .resumen {
@@ -272,33 +304,43 @@ span {
     margin: 80px
 }
 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 50px 5px;
+}
+
+#proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #FEE69C;
+}
+
+.animaciones {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 0px 70px 0px
+}
+
+.imaginacion {
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    margin: 80px;
+}
+
+/* FORMACION/EXPERIENCIA */
+
 .formacion,
 .experiencia {
     display: flex;
     flex-direction: column;
     background: #F87A63;
     padding: 80px;
-}
-
-.formacion h2,
-.experiencia h2 {
-    color: #FEE69C;
-}
-
-.formacion a,
-.experiencia a {
-    font-family: 'Mango', "Climate Crisis", sans-serif;
-    font-size: 3rem;
-    color: #FEE69C;
-    text-decoration: none;
-    padding: 50px 0px 0px 0px;
-    width: 100%;
-    text-align: right;
-}
-
-.formacion h3,
-.experiencia h3 {
-    padding: 10px 0px;
 }
 
 .item-a,
@@ -315,13 +357,6 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-}
-
-#proyectos {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    background-color: #FEE69C;
 }
 
 /* acá me puse a averiguar efectos especiales para las imagenes */
@@ -368,25 +403,7 @@ span {
     opacity: 1;
 }
 
-.animaciones {
-    display: flex;
-    gap: 80px;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0px 0px 70px 0px
-}
-
-#proyectos h2 {
-    text-align: center;
-    padding: 80px 0px 50px 0px;
-}
-
-.imaginacion {
-    padding: 80px;
-    display: flex;
-    justify-content: center;
-    margin: 80px;
-}
+/* FORMULARIO */
 
 #contacto {
     background-color: #D32E05;
@@ -394,12 +411,6 @@ span {
     flex-direction: column;
     padding: 70px;
     align-items: flex-end;
-}
-
-#contacto h2,
-#contacto p {
-    color: #FEE69C;
-    padding: 10px;
 }
 
 #form {
