@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Keywords" content="Portfolio brisa pereyra diseño">
-    <title>Pereyra Brisa</title>
+    <title>Pereyra Brisa index</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <style>
@@ -18,7 +18,7 @@
         <div class="encabezado">
             <nav>
                 <a href="#proyectos">PROYECTOS</a>
-                <a href="#contacto">CONTACTO</a>
+                <a href="contacto.html">CONTACTO</a>
                 <a href="#" class="logo">
                     <img src="img/logo.svg" class="logo-base" alt="logo">
                     <img src="img/logoamarillo.svg" class="logo-hover" alt="logo">
@@ -30,21 +30,30 @@
     </header>
 
     <main>
-        <img class="portada" src="img/portada.jpg" alt="Hola! Soy Bri"> <!-- esto te va a convenir tratarlo como un bloque con dos elementos (texto e imagen) que tenga un fondo (glaciares) para que puedas manejar el texto como un h1, el fondo desde css y tu foto en png, para que te quede encima del texto vas a tener que usar position relative. Esto es en función de hacerla accesible y, por otro lado, poder jugar con tamaños de pantalla porque ahora como está con alto fijo se puede prestar a confusión al ingresar porque se interpreta que no hay más contenido. Si esta sección no es fija y no ocupa el 100% de la pantalla podés dar indicios de que hay más contenido scrolleable. También te va a permitir hacer cosas responsive más dinámicas --> 
+        <section class="hero">
+            <img src="img/portada1.jpg" class="fondo" alt="fondo portada">
+            <div class="contenido-hero">
+                <img src="img/portada2.png" class="overlay" alt="superposición portada">
+                <h1>Hola! Soy Bri</h1>
+                <div class="flechas">
+                    ↓
+                </div>
+            </div>
+        </section>
         <section class="intro">
             <article class="marcapersonal">
                 <img src="img/estrella.gif" alt="estrella">
-                <blockquote> ... pero también me dicen Brichi, y esa es mi marca personal. </blockquote>
+                <blockquote> ... pero también me dicen Brichi, y esa es mi marca. </blockquote>
                 <img src="img/estrella.gif" alt="estrella">
             </article>
-            <article class="diseño">
-                <h1>DISEÑO Y COMUNICACIÓN VISUAL</h1>
-                <!-- Si bien el H1 se debería usar para lo principal y una sola vez en la pagina web, establecí dos que son lo que hago, pensando en que, si alguien busca "diseño" por ejemplo en la web, aparezca esto. Justo acá tiene recuadro y parece un blockquote pero a esta etiqueta la usé para otra cosa que me pareció más adecuada, no sé" -->
-                <p>MADE IN ARGENTINA [PERO CON INGLÉS C1, OJO]</p>
+            <article class="diseñocontenedor">
+                <div class="diseño">
+                <h2>Diseño y comunicación visual</h2>
+                <p>[ Made in Argentina ]</p>
+                </div>
             </article>
             <p class="descripcion">
                 <span>
-                    <!-- acá quizás podría haber puesto un h más, entre el cambio a bold, de tamaño, y que le puse "display:block" para que haga un salto de línea, pero decidí usar un span porque es una etiqueta que está en los apuntes y no estaba usando, para sumar variedad -->
                     ⭒ Resolutiva ⭒ Proactiva ⭒ Responsable ⭒ Comprometida ⭒ Creativa ⭒ Comunicativa ⭒ Descontracturada ⭒
                 </span>
                 Mi experiencia y formación me impulsan a encontrar soluciones a todo tipo de problemas,
@@ -53,28 +62,28 @@
                 actuar bajo presión y el intercambio con otros.
             </p>
         </section>
-        <section class="formalidad"> <!-- intuitivamente pensé que estos textos deberían ir en tu tipografía condensada, se percibe descolgado del sistema --> 
+        <section class="formalidad">
             <article class="experienciaboton">
                 <a href="experiencia.html">
-                    <h2>EXPERIENCIA LABORAL ↗</h2> <!-- como aspecto de accesibilidad los textos siempre tienen que ir escritos en minúsulas (o sea, normal) y si necesitás que visualemnte se vean en mayus/versalitas lo trates desde css con text-transform: uppercase; porque los lectores de pantallas para personas con visión reducida interpretan las mayúsculas como siglas y los leen como E EQUIS PE ERE I E ENE... pero si es solo una cuestión visual (css) lo leen normalmente --> 
+                    <h3> ver experiencia laboral</h3>
                 </a>
             </article>
             <article class="formacionboton">
                 <a href="formacion.html">
-                    <h2>↖ FORMACIÓN ACADÉMICA</h2>
+                    <h3>ver formacion académica</h3>
                 </a>
             </article>
             <div class="resumen">
-                <h1> ✶ EDITORIAL ✶ BRANDING ✶ REDES ✶<br>✶ ADMINISTRACIÓN ✶ ORGANIZACIÓN ✶ </h1>
+                <h2> ✶ editorial ✶ branding ✶ redes ✶<br>✶ administración ✶ organización ✶ </h2>
             </div>
         </section>
         <section id="proyectos">
-            <h2>˖࣪ ⊹ ₊ ✶ ˖ ๋࣭ ⭑ PROYECTOS ⭑ ๋࣭ ˖ ✶ ₊ ⊹ ࣪ ˖</h2>
+            <h3>˖࣪ ⊹ ₊ ✶ ˖ ๋࣭ ⭑ proyectos ⭑ ๋࣭ ˖ ✶ ₊ ⊹ ࣪ ˖</h3>
             <div class="cards">
                 <figure class="shot">
                     <img src="img/proyecto1b.png" class="base" alt="Proyecto">
                     <img src="img/proyecto1a.png" class="hover" alt="Proyecto hover">
-                    <h3>SHOT ✧</h3>
+                    <h4>Shot ✧</h4>
                     <p>Un juego de cartas inspirado en el UNO, pensado para un contexto informal, con la idea de que
                         tomar sea divertido. Consta de 50 cartas doble faz, ilustraciones propias que acompañan
                         determinada acción a realizar con cada carta.</p>
@@ -82,7 +91,7 @@
                 <figure class="maraton">
                     <img src="img/proyecto2b.png" class="base" alt="Proyecto">
                     <img src="img/proyecto2a.png" class="hover" alt="Proyecto hover">
-                    <h3>LA MARATÓN ✧</h3>
+                    <h4>La maratón ✧</h4>
                     <p>Proyecto de ilustración colectivo encabezado por Leo Moreira donde, en conjunto con 29 colegas,
                         realizamos ilustraciones de cabezas en conjunto con otra palabra, que culminó en un calendario
                         2026 impreso en risografía a 2 tintas.</p>
@@ -90,7 +99,7 @@
                 <figure class="cespedes">
                     <img src="img/proyecto3b.png" class="base" alt="Proyecto">
                     <img src="img/proyecto3a.png" class="hover" alt="Proyecto hover">
-                    <h3>CÉSPEDES ✧</h3>
+                    <h4>Céspedes ✧</h4>
                     <p>Identidad realizada para la librería Céspedes, sucursal de Belgrano; consta del diseño de vinilos
                         exteriores, y cartel luminoso. Por otro lado, tenemos los separadores y los sobres que contienen
                         los libros vendidos en otras sucursales.</p>
@@ -98,7 +107,7 @@
                 <figure class="yoru">
                     <img src="img/proyecto4b.png" class="base" alt="Proyecto">
                     <img src="img/proyecto4a.png" class="hover" alt="Proyecto hover">
-                    <h3>YORU ✧</h3>
+                    <h4>Yoru ✧</h4>
                     <p>Identidad para marca de ropa inspirada en el animé y la cultura japonesa contemporánea. Se
                         compone de varias prendas de diversos tipos, accesorios, la realización de logo, y de una
                         tipografía única identitaria en sistema con el mismo.</p>
@@ -106,7 +115,7 @@
                 <figure class="urge">
                     <img src="img/proyecto5b.png" class="base" alt="Proyecto">
                     <img src="img/proyecto5a.png" class="hover" alt="Proyecto hover">
-                    <h3>URGE! ✧</h3>
+                    <h4>URGE! ✧</h4>
                     <p>Afiche expuesto en el MUD (Museo Universitario de Diseño), en el marco de la exposición URGE!,
                         para la emergencia ambiental. Realizado el año 2025, tras una invitación extendida por la
                         cátedra de Taller de Diseño II (Reboursin).</p>
@@ -114,7 +123,7 @@
                 <figure class="museo">
                     <img src="img/proyecto6b.png" class="base" alt="Proyecto">
                     <img src="img/proyecto6a.png" class="hover" alt="Proyecto hover">
-                    <h3>MUSEO DE LA INTERFERENCIA ✧</h3>
+                    <h4>Museo de la interferencia ✧</h4>
                     <p>Identidad visual para el Museo de la Interferencia, un lugar donde la falla es bienvenida y la
                         interferencia visual es la estrella. Consta de señalética, logos, afiches, indumentaria, piezas
                         editoriales, merch, postales y redes.</p>
@@ -122,7 +131,7 @@
                 <figure class="microplasticos">
                     <img src="img/proyecto7b.png" class="base" alt="Proyecto">
                     <img src="img/proyecto7a.png" class="hover" alt="Proyecto hover">
-                    <h3>MICROPLÁSTICOS ✧</h3>
+                    <h4>Microplásticos ✧</h4>
                     <p>Proyecto editorial: revista de 28 páginas sobre los tantos efectos del plástico. Incluye
                         elementos infográficos, textos destacados, anexos, listados, tablas, catálogos, sumario, y
                         bloques de texto pensados para la lectura de corrido.</p>
@@ -130,7 +139,7 @@
                 <figure class="todoesoquesobra">
                     <img src="img/proyecto8b.png" class="base" alt="Proyecto">
                     <img src="img/proyecto8a.png" class="hover" alt="Proyecto hover">
-                    <h3>TODO ESO QUE SOBRA ✧</h3>
+                    <h4>Todo eso que sobra ✧</h4>
                     <p>Libro de artista que manifiesta, en diversas técnicas y composiciones las injusticias en relación
                         a la explotación animal, a nivel global. Juega con lo oculto, con aquello que no se quiere ver.
                         Consta de libro, contenedor, y más.</p>
@@ -138,12 +147,12 @@
                 <figure class="zzzeta">
                     <img src="img/proyecto9b.png" class="base" alt="Proyecto">
                     <img src="img/proyecto9a.png" class="hover" alt="Proyecto hover">
-                    <h3>ZZZETA ✧</h3>
+                    <h4>ZZZETA ✧</h4>
                     <p>Identidad visual para festival de cine argentino, que celebra la lentitud como parte del ritmo.
                         Incluye afiches, pieza editorial, postales, cronograma impreso y digital, tickets, y merch.</p>
                 </figure>
             </div>
-            <h2>˖࣪ ⊹ ₊ ✶ ˖ ๋࣭ ⭑ ANIMACIONES ⭑ ๋࣭ ˖ ✶ ₊ ⊹ ࣪ ˖</h2>
+            <h3>˖࣪ ⊹ ₊ ✶ ˖ ๋࣭ ⭑ Animaciones ⭑ ๋࣭ ˖ ✶ ₊ ⊹ ࣪ ˖</h3>
             <div class="animaciones">
                 <video src="img/animacion1.mp4" controls width="362px"></video>
                 <video src="img/animacion2.mp4" controls width="362px"></video>
@@ -153,25 +162,11 @@
         <article class="imaginacion">
             <blockquote> El poder de la imaginación nos hace infinitos. </blockquote>
         </article>
-        <section id="contacto">
-            <h2>¿TRABAJAMOS JUNTOS?</h2>
-            <p>Contactame via correo, a través de mis redes sociales, o dejame tu contacto y tu consulta por acá:</p> <!-- si vas a diseñar toda esta sección marginada a la derecha ponele un align-text right a esta parte porque cuando se ve más chico se percibe como error --> 
-            <form method="post" action="" target="_blank" enctype="text/plain"> <!-- esto se ve bien en pantallas pequeñas pero no en grandes, te conviene ponerle un max-width porque los campos se hacen larguísimos para leer lo que cada persona escribió en cada input --> 
-                <div>
-                    <label for="nombre"> </label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre completo" required>
-                </div>
-                <div>
-                    <label for="email"> </label>
-                    <input type="text" name="email" id="email" placeholder="Email" required>
-                </div>
-                <div>
-                    <label for="mensaje"> </label>
-                    <input type="text" name="mensaje" id="mensaje" placeholder="Mensaje" required>
-                </div>
-                <input type="submit" value="ENVIAR" formenctype="text/plain" class="enviar">
-            </form>
-        </section>
+        <article class="contactoboton">
+            <a href="contacto.html">
+                <h3> Querés que tus ideas se vuelvan un gran diseño? Contactame acá!</h3>
+            </a>
+        </article>
     </main>
 
     <footer>

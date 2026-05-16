@@ -30,28 +30,24 @@
     </header>
 
     <main>
-        <section class="formacion">
-            <h3>✦ FORMACIÓN ✦</h3>
-            <article class="item-a">
-                <h4>Licenciatura en Diseño y Comunicación visual</h4>
-                <h5>2022 - PRESENTE</h5>
-            </article>
-            <p>Universidad Nacional de Lanús</p>
-            <article class="item-b">
-                <h4>Curso de animación:This is animation</h4>
-                <h5>2025</h5>
-            </article>
-            <p>Sony Pictures Animation</p>
-            <article class="item-c">
-                <h4>Introducción al After Effects</h4>
-                <h5>2022</h5>
-            </article>
-            <p>Enter digital school</p>
-            <article class="item-d">
-                <h4>Bachillerato orientado en lenguas extranjeras</h4>
-                <h5>2016-2021</h5>
-            </article>
-            <p>E.E.S. N°7 - Lanús</p>
+        <section class="contacto">
+                        <h3>Trabajamos juntos?</h3>
+            <p>Contactame via correo, a través de mis redes sociales, o dejame tu contacto y tu consulta por acá:</p> <!-- si vas a diseñar toda esta sección marginada a la derecha ponele un align-text right a esta parte porque cuando se ve más chico se percibe como error --> 
+            <form method="post" action="" target="_blank" enctype="text/plain"> <!-- esto se ve bien en pantallas pequeñas pero no en grandes, te conviene ponerle un max-width porque los campos se hacen larguísimos para leer lo que cada persona escribió en cada input --> 
+                <div>
+                    <label for="nombre"> </label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre completo" required>
+                </div>
+                <div>
+                    <label for="email"> </label>
+                    <input type="text" name="email" id="email" placeholder="Email" required>
+                </div>
+                <div>
+                    <label for="mensaje"> </label>
+                    <input type="text" name="mensaje" id="mensaje" placeholder="Mensaje" required>
+                </div>
+                <input type="submit" value="ENVIAR" formenctype="text/plain" class="enviar">
+            </form>
             <a href="index.html" class="logo">←VOLVER</a>
         </section>
     </main>
