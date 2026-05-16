@@ -221,18 +221,18 @@ span {
 .formacion h3,
 .experiencia h3 {
     color: #FEE69C;
+    padding: 30px;
+    text-transform: uppercase;
 }
 
 .formacion a,
 .experiencia a,
 .contacto a {
     font-family: 'Mango', "Climate Crisis", sans-serif;
-    font-size: 3rem;
-    color: #FEE69C;
+    font-size: 2.5rem;
+    color:#D32E05;
     text-decoration: none;
-    padding: 70px 0px 0px 0px;
-    width: 100%;
-    text-align: right;
+    padding-left: 30px;
 }
 
 .formacion h4,
@@ -424,47 +424,6 @@ justify-content: center;
     padding: 30px;
 }
 
-.animaciones {
-    display: flex;
-    gap: 80px;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0px 0px 70px 0px
-}
-
-.imaginacion {
-    padding: 80px;
-    display: flex;
-    justify-content: center;
-    margin: 80px;
-}
-
-/* FORMACION/EXPERIENCIA/CONTACTO */
-
-.formacion,
-.experiencia {
-    display: flex;
-    flex-direction: column;
-    background: #F87A63;
-    padding: 80px;
-}
-
-.item-a,
-.item-b,
-.item-c,
-.item-d {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-.item-1,
-.item-2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
 .shot,
 .maraton,
 .cespedes,
@@ -507,6 +466,62 @@ justify-content: center;
     opacity: 1;
 }
 
+.animaciones {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 0px 70px 0px
+}
+
+.imaginacion {
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    margin: 80px;
+}
+
+/* FORMACION/EXPERIENCIA/CONTACTO */
+
+.formacion,
+.experiencia {
+    display: flex;
+    flex-direction: column;
+    background: #F87A63;
+    padding: 50px;
+}
+
+.item-acontenedor,
+.item-bcontenedor,
+.item-ccontenedor,
+.item-dcontenedor,
+.item-1contenedor,
+.item-2contenedor {
+    background-color:#FEE69C;
+    margin: 30px;
+    padding: 40px;
+}
+
+.item-a,
+.item-b,
+.item-c,
+.item-d {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-1,
+.item-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo {
+display:flex;
+align-items: center;
+justify-content: space-between;
+}
+
 /* FORMULARIO */
 
 .contacto {
@@ -514,7 +529,13 @@ justify-content: center;
     display: flex;
     flex-direction: column;
     padding: 70px;
-    align-items: flex-end;
+}
+
+.contactocontenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 #form {
@@ -526,12 +547,12 @@ form input {
     background-color: #F87A63;
     width: 85vw;
     height: 0.5vh;
+    max-width: 60vw;
     padding: 20px;
     border: none;
     font-family: 'Mori Regular', "IBM Plex Sans", sans-serif;
     font-size: 0.9rem;
     color: #FEE69C;
-    text-align: right;
 }
 
 form input::placeholder {
@@ -557,7 +578,7 @@ form {
     width: auto;
     border: none;
     padding: 15px 25px;
-    align-self: flex-end;
+    align-self: flex-start;
     height: auto;
 }
 
