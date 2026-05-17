@@ -133,6 +133,7 @@ nav {
 
 footer {
     padding: 20px 50px;
+    gap: 30px;
     background-color: #FEE69C;
     display: flex;
     justify-content: space-between;
@@ -150,11 +151,12 @@ footer img {
 }
 
 /*TIPOGRAFÍA*/
+/* acá hice lo que me habías comentado sobre la superposicion y agregar el h1 pero me viene generando muchos dramas en cuanto a tamaños tipográficos, segun google esa propiedad de clamp hace que mas o menos se ajuste, porque si le pongo tamaño fijo me queda (misteriosamente) muy chico si lo quiero dejar en una sola linea*/
 
 h1 {
     font-family: 'Mango Extralight', "IBM Plex Sans", sans-serif;
     color: #000000;
-    font-size: 38rem;
+    font-size: clamp(17rem, 30vw, 50rem);
     font-weight: 100;
     text-transform: uppercase;
 }
@@ -192,7 +194,7 @@ p,
 li {
     list-style: none;
     font-size: 1rem;
-    line-height: 1.8rem;
+    line-height: 1.6rem;
     text-wrap: balance;
     font-family: 'Mori Regular', "IBM Plex Sans", sans-serif;
 }
@@ -230,7 +232,7 @@ span {
 .contacto a {
     font-family: 'Mango', "Climate Crisis", sans-serif;
     font-size: 2.5rem;
-    color:#D32E05;
+    color: #D32E05;
     text-decoration: none;
     padding-left: 30px;
 }
@@ -288,7 +290,8 @@ span {
     left: 50%;
     z-index: 2;
     transform: translate(-50%, -50%);
-    white-space: nowrap;
+    width: 100%;
+    text-align: center;
 }
 
 /*DESARROLLO*/
@@ -363,6 +366,7 @@ blockquote {
     font-size: 1.8rem;
     color: #FEE69C;
     margin: 0;
+    text-align: center;
 }
 
 .diseño {
@@ -373,12 +377,13 @@ blockquote {
     margin: 10px 0px 60px;
     align-items: center;
     line-height: 4rem;
-    max-width: 50vw;
+    width: 100%;
+    max-width: 900px;
 }
 
 .diseñocontenedor {
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .descripcion {
@@ -386,15 +391,14 @@ justify-content: center;
     flex-direction: column;
     text-align: center;
     color: #F87A63;
-    max-width: 1100px;
+    max-width: 1000px;
     padding: 50px;
-    margin: 0 auto;
+    margin: auto;
 }
-
+/* acá usé un padding mayor a 80 que sé que sería incorrecto pero quería que se alinee con el cuadrado rojo de arriba, seguiría estando mal? lo vuelvo a 80? no se me ocurrió otra cosa para dejarlo exactamente a esa altura*/
 .experienciaboton {
     background-color: #FEE69C;
     padding: 50px 105px;
-    /* acá usé un padding mayor a 80 que sé que sería incorrecto pero quería que se alinee con el cuadrado rojo de arriba, seguiría estando mal? lo vuelvo a 80? no se me ocurrió otra cosa para dejarlo exactamente a esa altura*/
     margin: 55px 0px;
 }
 
@@ -442,7 +446,8 @@ justify-content: center;
 
 .base,
 .hover {
-    width: 544px;
+    width: 100%;
+    max-width: 500px;
     display: block;
 }
 
@@ -497,7 +502,7 @@ justify-content: center;
 .item-dcontenedor,
 .item-1contenedor,
 .item-2contenedor {
-    background-color:#FEE69C;
+    background-color: #FEE69C;
     margin: 30px;
     padding: 40px;
 }
@@ -517,9 +522,9 @@ justify-content: center;
 }
 
 .titulo {
-display:flex;
-align-items: center;
-justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* FORMULARIO */
@@ -546,7 +551,7 @@ justify-content: space-between;
 form input {
     background-color: #F87A63;
     width: 85vw;
-    height: 0.5vh;
+    min-height: 0.4vh;
     max-width: 60vw;
     padding: 20px;
     border: none;
@@ -582,17 +587,88 @@ form {
     height: auto;
 }
 
-@media screen and (max-width:1800px) {
-    h1 {
-        font-size: 25rem
+@media screen and (max-width:600px) {
+
+    nav {
+        gap: 30px;
     }
+
+    .encabezado a {
+        font-size: 1.8rem;
+    }
+
+    .logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    .marcapersonal {
+        flex-direction: column;
+    }
+
+    .marcapersonal img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .descripcion {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: #F87A63;
+        max-width: 1000px;
+    }
+
+    .resumen {
+        padding: 60px 00px;
+        margin: 30px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    .cards h4 {
+        font-size: 3rem;
+    }
+
+    h5 {
+        margin: 5px 0px;
+    }
+
+    .contactoboton {
+        padding: 40px;
+        text-align: center;
+    }
+
+    .formacionboton,
+    .experienciaboton {
+        padding: 25px;
+    }
+
+.formacion a,
+.experiencia a,
+.contacto a {
+    font-family: 'Mango', "Climate Crisis", sans-serif;
+    font-size: 2rem;
 }
 
-@media screen and (max-width:1100px) {
-    h1 {
-        font-size: 18rem
-    }
+main {
 
-    @media screen and (max-width:500px) {
-        TODAS LAS CONFIG PARA MOBILE
+    padding-top: 50px;
+    flex: 1;
+}
+
+    .item-1,
+    .item-2,
+    .item-a,
+    .item-b,
+    .item-c,
+    .item-d {
+        flex-direction: column;
     }
+}
