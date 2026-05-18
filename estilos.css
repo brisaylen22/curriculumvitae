@@ -143,6 +143,7 @@ footer {
 
 footer img {
     width: 3vw;
+    min-width: 34px;
 }
 
 .logos {
@@ -683,6 +684,21 @@ form {
         font-family: 'Mango', "Climate Crisis", sans-serif;
         font-size: 2rem;
     }
+
+    .item-acontenedor,
+    .item-bcontenedor,
+    .item-ccontenedor,
+    .item-dcontenedor,
+    .item-1contenedor,
+    .item-2contenedor {
+    padding: 20px 0px;
+    margin: 0px;
+    background:#F87A63;
+    }
+
+    .formacion h3,
+    .experiencia h3 {
+        padding: 0px;}
 
     main {
         padding-top: 50px;
