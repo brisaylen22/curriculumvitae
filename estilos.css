@@ -142,7 +142,7 @@ footer {
 }
 
 footer img {
-    width: 50px;
+    width: 3vw;
 }
 
 .logos {
@@ -156,7 +156,7 @@ footer img {
 h1 {
     font-family: 'Mango Extralight', "IBM Plex Sans", sans-serif;
     color: #000000;
-    font-size: clamp(17rem, 30vw, 50rem);
+    font-size: clamp(17rem, 30vw, 40rem);
     font-weight: 100;
     text-transform: uppercase;
 }
@@ -324,7 +324,7 @@ span {
 
 .flechas {
     position: absolute;
-    bottom: 90px;
+    bottom: 120px;
     left: 50%;
     z-index: 4;
     font-size: 2rem;
@@ -395,6 +395,7 @@ blockquote {
     padding: 50px;
     margin: auto;
 }
+
 /* acá usé un padding mayor a 80 que sé que sería incorrecto pero quería que se alinee con el cuadrado rojo de arriba, seguiría estando mal? lo vuelvo a 80? no se me ocurrió otra cosa para dejarlo exactamente a esa altura*/
 .experienciaboton {
     background-color: #FEE69C;
@@ -436,19 +437,16 @@ blockquote {
 .museo,
 .microplasticos,
 .todoesoquesobra,
-.zzzeta,
-.lettering {
+.zzzeta {
     position: relative;
-    position: relative;
-    flex: 1 1 500px;
+    width: 38vw;
     max-width: 544px;
+    min-width: 260px;
 }
 
 .base,
 .hover {
     width: 100%;
-    max-width: 500px;
-    display: block;
 }
 
 .hover {
@@ -466,8 +464,7 @@ blockquote {
 .museo:hover .hover,
 .microplasticos:hover .hover,
 .todoesoquesobra:hover .hover,
-.zzzeta:hover .hover,
-.lettering:hover .hover {
+.zzzeta:hover .hover {
     opacity: 1;
 }
 
@@ -477,6 +474,11 @@ blockquote {
     flex-wrap: wrap;
     justify-content: center;
     padding: 0px 0px 70px 0px
+}
+
+.animaciones video {
+    max-width: 100vw;
+    height: auto;
 }
 
 .imaginacion {
@@ -587,7 +589,10 @@ form {
     height: auto;
 }
 
-@media screen and (max-width:600px) {
+/*MEDIA QUERIES*/
+/*sé que con lo que vimos en los videos hay anchos definidos de pantalla, pero me guié por los momentos donde las cosas dejaban de funcionar y los fui ajustando a partir de ahi, a ver si puede ser mas responsive aún*/
+
+@media screen and (max-width:760px) {
 
     nav {
         gap: 30px;
@@ -624,8 +629,26 @@ form {
         margin: 30px;
     }
 
+    .imaginacion {
+        padding: 0px;
+    }
+
+    .base,
+    .hover {
+        width: 100%;
+        width: 60vw;
+    }
+
+    .hero h1 {
+        text-align: start;
+        padding: 26px;
+        line-height: 15rem;
+    }
+
     h2 {
-        font-size: 2rem;
+        font-size: 1.7rem;
+        line-height: 2.4rem;
+        padding: 40px 0px;
     }
 
     h3 {
@@ -633,7 +656,11 @@ form {
     }
 
     .cards h4 {
-        font-size: 3rem;
+        font-size: 2.5rem;
+    }
+
+    .animaciones video {
+        max-width: 70vw;
     }
 
     h5 {
@@ -650,18 +677,17 @@ form {
         padding: 25px;
     }
 
-.formacion a,
-.experiencia a,
-.contacto a {
-    font-family: 'Mango', "Climate Crisis", sans-serif;
-    font-size: 2rem;
-}
+    .formacion a,
+    .experiencia a,
+    .contacto a {
+        font-family: 'Mango', "Climate Crisis", sans-serif;
+        font-size: 2rem;
+    }
 
-main {
-
-    padding-top: 50px;
-    flex: 1;
-}
+    main {
+        padding-top: 50px;
+        flex: 1;
+    }
 
     .item-1,
     .item-2,
@@ -671,4 +697,49 @@ main {
     .item-d {
         flex-direction: column;
     }
+
+    blockquote {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    nav {
+        gap: 20px;
+    }
+
+    .encabezado a {
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    .hero h1 {
+        line-height: 13rem;
+        top: 50%;
+        font-size: 15rem;
+        padding-left: 60px;
+    }
+}
+
+@media screen and (max-width:380px) {
+
+    .hero h1 {
+        line-height: 10rem;
+        top: 50%;
+        font-size: 12rem;
+        padding-left: 60px;
+    }
+
+    nav {
+        gap: 16px;
+    }
+
+    .encabezado a {
+        font-size: 1.3rem;
+    }
+
 }
