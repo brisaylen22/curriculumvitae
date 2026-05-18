@@ -734,10 +734,10 @@ form {
     }
 
     .hero h1 {
-        line-height: 13rem;
+        line-height: 14rem;
         top: 50%;
-        font-size: 16rem;
-        padding-left: 60px;
+        font-size: 18rem;
+        padding-left: 70px;
     }
 }
 
