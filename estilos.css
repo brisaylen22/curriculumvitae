@@ -744,10 +744,10 @@ form {
 @media screen and (max-width:380px) {
 
     .hero h1 {
-        line-height: 11rem;
+        line-height: 12rem;
         top: 50%;
-        font-size: 14rem;
-        padding-left: 60px;
+        font-size: 16rem;
+        padding-left: 80px;
     }
 
     nav {
