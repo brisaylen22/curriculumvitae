@@ -374,8 +374,7 @@ blockquote {
     display: flex;
     flex-direction: column;
     background: #D32E05;
-    padding: 70px 70px 60px 70px;
-    margin: 10px 0px 60px;
+    padding: 60px 60px 60px 70px;
     align-items: center;
     line-height: 4rem;
     width: 100%;
@@ -385,6 +384,7 @@ blockquote {
 .diseñocontenedor {
     display: flex;
     justify-content: center;
+    margin: 10px 0px 60px;
 }
 
 .descripcion {
@@ -623,6 +623,14 @@ form {
         text-align: center;
         color: #F87A63;
         max-width: 1000px;
+    }
+
+    .diseñocontenedor{
+        margin: 10px 50px 60px;
+    }  
+
+    .diseño {
+    padding: 40px 40px 40px 60px;
     }
 
     .resumen {
