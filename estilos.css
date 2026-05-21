@@ -624,12 +624,12 @@ form {
         max-width: 1000px;
     }
 
-    .diseñocontenedor{
+    .diseñocontenedor {
         margin: 10px 50px 60px;
-    }  
+    }
 
     .diseño {
-    padding: 40px;
+        padding: 40px;
     }
 
     .resumen {
@@ -698,14 +698,15 @@ form {
     .item-dcontenedor,
     .item-1contenedor,
     .item-2contenedor {
-    padding: 20px 0px;
-    margin: 0px;
-    background:#F87A63;
+        padding: 20px 0px;
+        margin: 0px;
+        background: #F87A63;
     }
 
     .formacion h3,
     .experiencia h3 {
-        padding: 0px;}
+        padding: 0px;
+    }
 
     main {
         padding-top: 50px;
