@@ -232,8 +232,8 @@ span {
 .experiencia a,
 .contacto a {
     font-family: 'Mango', "Climate Crisis", sans-serif;
-    font-size: 2.5rem;
-    color: #D32E05;
+    font-size: 2.3rem;
+    color: #8c2005;
     text-decoration: none;
     padding-left: 30px;
 }
@@ -397,10 +397,9 @@ blockquote {
     margin: auto;
 }
 
-/* acá usé un padding mayor a 80 que sé que sería incorrecto pero quería que se alinee con el cuadrado rojo de arriba, seguiría estando mal? lo vuelvo a 80? no se me ocurrió otra cosa para dejarlo exactamente a esa altura*/
 .experienciaboton {
     background-color: #FEE69C;
-    padding: 50px 105px;
+    padding: 50px 80px;
     margin: 55px 0px;
 }
 
@@ -630,7 +629,7 @@ form {
     }  
 
     .diseño {
-    padding: 40px 40px 40px 60px;
+    padding: 40px;
     }
 
     .resumen {
