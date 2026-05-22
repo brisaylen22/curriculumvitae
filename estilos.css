@@ -69,7 +69,7 @@ body {
 /*HEADER*/
 
 header {
-    background-color: #D32E05;
+    background-color:#F87A63;
     padding: 10px 0px;
     position: fixed;
     width: 100%;
@@ -664,7 +664,26 @@ form {
     }
 
     .cards h4 {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
+    }
+
+.shot,
+.maraton,
+.cespedes,
+.yoru,
+.urge,
+.museo,
+.microplasticos,
+.todoesoquesobra,
+.zzzeta {
+    width: 97%;
+    max-width: 544px;
+    min-width: 260px;
+}
+
+.base,
+    .hover {
+        width: 100%;
     }
 
     .animaciones video {
