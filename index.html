@@ -5,9 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Keywords" content="Portfolio brisa pereyra diseño">
-    <title>Pereyra Brisa index</title>
+    <title>Pereyra Brisa</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
     </style>
@@ -175,10 +176,16 @@
             </div>
             <h3>࣪ ₊ ✶ ⭑ animaciones ₊ ✶ ⭑ </h3>
             <div class="animaciones">
-                <video src="img/animacion1.mp4" controls width="362px"></video>
-                <video src="img/animacion2.mp4" controls width="362px"></video>
-                <video src="img/animacion3.mp4" controls width="362px"></video>
+                <video src="img/animacion1.mp4" controls></video>
+                <video src="img/animacion2.mp4" controls></video>
+                <video src="img/animacion3.mp4" controls></video>
             </div>
+            <div class="my-slider">
+                <div> <video src="img/animacion1.mp4" controls></video></div>
+                <div> <video src="img/animacion2.mp4" controls></video></div>
+                <div> <video src="img/animacion3.mp4" controls></video></div>
+            </div>
+
         </section>
         <article class="imaginacion">
             <blockquote> El poder de la imaginación nos hace infinitos. </blockquote>
@@ -209,6 +216,26 @@
             <p>Realizado por Brisa Pereyra :)</p>
         </div>
     </footer>
+
+<!-- alo!! acá me puse a investigar y encontré un carrousel en git que me gustó asique seguí las instrucciones que aparecían en el release. Intenté con los archivos pero no me salió, asique probé esta forma y pude, estaría mal? pude aplicar las configuraciones en mi css, necesito si o si hacerlo con archivos jquery? -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+
+<script>
+    var slider = tns({
+        container: '.my-slider',
+        items: 1,
+        slideBy: 1,
+        loop: false,
+        rewind: true,
+        autoplay: false,
+        controls: true,
+        controlsText: ['←', '→'],
+        nav: false,
+        mouseDrag: true,
+        speed: 400,
+        gutter: 0
+    });
+</script>
 </body>
 
 </html>
