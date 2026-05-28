@@ -309,7 +309,7 @@ span {
 .hero {
     position: relative;
     width: 100%;
-    height: calc(100vh);
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -510,8 +510,8 @@ blockquote {
     display: flex;
     flex-direction: column;
     background: #D32E05;
-    padding: 50px;
-    min-height: calc(100vh + 140px);
+    padding: 100px 50px 50px 50px;
+    min-height: calc(100vh + 150px);
     justify-content: space-evenly;
 }
 
