@@ -7,7 +7,7 @@
     <meta name="Keywords" content="Portfolio brisa pereyra diseño">
     <title>Pereyra Brisa</title>
     <link rel="stylesheet" href="estilos.css">
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="img/cursor-favicon/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
@@ -21,8 +21,8 @@
                 <a href="#proyectos">PROYECTOS</a>
                 <a href="contacto.html">CONTACTO</a>
                 <a href="#" class="logo">
-                    <img src="img/logo.svg" class="logo-base" alt="logo">
-                    <img src="img/logoamarillo.svg" class="logo-hover" alt="logo">
+                    <img src="img/footer-header/logo.svg" class="logo-base" alt="logo">
+                    <img src="img/footer-header/logoamarillo.svg" class="logo-hover" alt="logo">
                 </a>
                 <a href="formacion.html">FORMACIÓN</a>
                 <a href="experiencia.html">EXPERIENCIA</a>
@@ -32,18 +32,19 @@
 
     <main>
         <section class="hero">
-            <img src="img/portada1.jpg" class="fondo" alt="fondo portada">
+            <img src="img/hero/portada1.jpg" class="fondo" alt="fondo portada">
             <div class="contenido-hero">
-                <img src="img/portada2.png" class="overlay" alt="superposición portada">
+                <img src="img/hero/portada2.png" class="overlay" alt="superposición portada">
                 <h1>Hola! Soy Bri</h1>
-                <div class="flechas">
+                <a href="#intro" class="flechas">
                     ↓
-                </div>
+                </a>
             </div>
         </section>
-        <section class="intro">
+        <section id="intro">
             <article class="marcapersonal">
-                <img src="img/estrella.gif" alt="estrella"> <!--  en lugar de poner un gif te recomiendo probar con rotate y unos keyframes-->
+                <img src="img/estrella.gif" alt="estrella">
+                <!--  en lugar de poner un gif te recomiendo probar con rotate y unos keyframes-->
                 <blockquote> pero también me dicen Brichi, y esa es mi marca personal. </blockquote>
                 <img src="img/estrella.gif" alt="estrella">
             </article>
@@ -64,19 +65,13 @@
             </p>
         </section>
         <section class="formalidad">
-            <article class="experienciaboton"> <!--estos articles están de más, pueden contenerse solas las a-->
-                <a href="experiencia.html">
-                    <h3> ver experiencia laboral</h3>
-                </a>
-            </article>
-            <article class="formacionboton">
-                <a href="formacion.html">
-                    <h3>ver formacion académica</h3>
-                </a>
-            </article>
-            <div class="resumen"> <!--este div está de más-->
-                <h2> ✶ editorial ✶ branding ✶ redes sociales ✶<br>✶ administración ✶ organización ✶ </h2>
-            </div>
+            <a href="experiencia.html" class="experienciaboton">
+                <h3> ver experiencia laboral</h3>
+            </a>
+            <a href="formacion.html" class="formacionboton">
+                <h3>ver formacion académica</h3>
+            </a>
+            <h2 class="resumen"> ✶ editorial ✶ branding ✶ redes sociales ✶<br>✶ administración ✶ organización ✶ </h2>
         </section>
         <section id="proyectos">
             <h3>࣪ ₊ ✶ ⭑ proyectos ࣪₊ ✶ ⭑ </h3>
@@ -84,8 +79,8 @@
                 <figure class="shot">
                     <a href="https://www.instagram.com/p/DHHSApROJ1e/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
                         target="_blank">
-                        <img src="img/proyecto1b.png" class="base" alt="Proyecto">
-                        <img src="img/proyecto1a.png" class="hover" alt="Proyecto hover">
+                        <img src="img/proyectos/proyecto1b.png" class="base" alt="Proyecto">
+                        <img src="img/proyectos/proyecto1a.png" class="hover" alt="Proyecto hover">
                     </a>
                     <h4>Shot ✧</h4>
                     <p>Un juego de cartas inspirado en el UNO, pensado para un contexto informal, con la idea de que
@@ -94,8 +89,8 @@
                 </figure>
                 <figure class="maraton">
                     <a href="https://www.behance.net/gallery/240652623/Calendario-2026" target="_blank">
-                        <img src="img/proyecto2b.png" class="base" alt="Proyecto">
-                        <img src="img/proyecto2a.png" class="hover" alt="Proyecto hover">
+                        <img src="img/proyectos/proyecto2b.png" class="base" alt="Proyecto">
+                        <img src="img/proyectos/proyecto2a.png" class="hover" alt="Proyecto hover">
                     </a>
                     <h4>La maratón ✧</h4>
                     <p>Proyecto de ilustración colectivo encabezado por Leo Moreira donde, en conjunto con 29 colegas,
@@ -105,8 +100,8 @@
                 <figure class="cespedes">
                     <a href="https://cespedeslibros.com.ar/?srsltid=AfmBOopYFjnncuXQHikeYL9LSb-1muNZRmzNZ6Oh8jgEDomMHt-B6Xrg"
                         target="_blank">
-                        <img src="img/proyecto3b.png" class="base" alt="Proyecto">
-                        <img src="img/proyecto3a.png" class="hover" alt="Proyecto hover">
+                        <img src="img/proyectos/proyecto3b.png" class="base" alt="Proyecto">
+                        <img src="img/proyectos/proyecto3a.png" class="hover" alt="Proyecto hover">
                     </a>
                     <h4>Céspedes ✧</h4>
                     <p>Identidad realizada para la librería Céspedes, sucursal de Belgrano; consta del diseño de vinilos
@@ -116,8 +111,8 @@
                 <figure class="yoru">
                     <a href="https://www.instagram.com/p/DOrP2ZxjpQ8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
                         target="_blank">
-                        <img src="img/proyecto4b.png" class="base" alt="Proyecto">
-                        <img src="img/proyecto4a.png" class="hover" alt="Proyecto hover">
+                        <img src="img/proyectos/proyecto4b.png" class="base" alt="Proyecto">
+                        <img src="img/proyectos/proyecto4a.png" class="hover" alt="Proyecto hover">
                     </a>
                     <h4>Yoru ✧</h4>
                     <p>Identidad para marca de ropa inspirada en el animé y la cultura japonesa contemporánea. Se
@@ -126,8 +121,8 @@
                 </figure>
                 <figure class="urge">
                     <a href="https://www.behance.net/gallery/215300733/Poster-URGE" target="_blank">
-                        <img src="img/proyecto5b.png" class="base" alt="Proyecto">
-                        <img src="img/proyecto5a.png" class="hover" alt="Proyecto hover">
+                        <img src="img/proyectos/proyecto5b.png" class="base" alt="Proyecto">
+                        <img src="img/proyectos/proyecto5a.png" class="hover" alt="Proyecto hover">
                     </a>
                     <h4>URGE! ✧</h4>
                     <p>Afiche expuesto en el MUD (Museo Universitario de Diseño), en el marco de la exposición URGE!,
@@ -136,8 +131,8 @@
                 </figure>
                 <figure class="museo">
                     <a href="https://www.behance.net/gallery/244805543/MUSEO-DE-LA-INTERFERENCIA" target="_blank">
-                        <img src="img/proyecto6b.png" class="base" alt="Proyecto">
-                        <img src="img/proyecto6a.png" class="hover" alt="Proyecto hover">
+                        <img src="img/proyectos/proyecto6b.png" class="base" alt="Proyecto">
+                        <img src="img/proyectos/proyecto6a.png" class="hover" alt="Proyecto hover">
                     </a>
                     <h4>Museo de la interferencia ✧</h4>
                     <p>Identidad visual para el Museo de la Interferencia, un lugar donde la falla es bienvenida y la
@@ -146,8 +141,8 @@
                 </figure>
                 <figure class="microplasticos">
                     <a href="https://www.behance.net/gallery/229425525/BookzineRevista-MICROPLASTICOS" target="_blank">
-                        <img src="img/proyecto7b.png" class="base" alt="Proyecto">
-                        <img src="img/proyecto7a.png" class="hover" alt="Proyecto hover">
+                        <img src="img/proyectos/proyecto7b.png" class="base" alt="Proyecto">
+                        <img src="img/proyectos/proyecto7a.png" class="hover" alt="Proyecto hover">
                     </a>
                     <h4>Microplásticos ✧</h4>
                     <p>Proyecto editorial: revista de 28 páginas sobre los tantos efectos del plástico. Incluye
@@ -156,8 +151,8 @@
                 </figure>
                 <figure class="todoesoquesobra">
                     <a href="https://www.behance.net/gallery/184627799/Todo-eso-que-sobra" target="_blank">
-                        <img src="img/proyecto8b.png" class="base" alt="Proyecto">
-                        <img src="img/proyecto8a.png" class="hover" alt="Proyecto hover">
+                        <img src="img/proyectos/proyecto8b.png" class="base" alt="Proyecto">
+                        <img src="img/proyectos/proyecto8a.png" class="hover" alt="Proyecto hover">
                     </a>
                     <h4>Todo eso que sobra ✧</h4>
                     <p>Libro de artista que manifiesta, en diversas técnicas y composiciones las injusticias en relación
@@ -166,8 +161,8 @@
                 </figure>
                 <figure class="zzzeta">
                     <a href="https://www.behance.net/gallery/215299975/ZZZ-Festival-de-cine-argentino" target="_blank">
-                        <img src="img/proyecto9b.png" class="base" alt="Proyecto">
-                        <img src="img/proyecto9a.png" class="hover" alt="Proyecto hover">
+                        <img src="img/proyectos/proyecto9b.png" class="base" alt="Proyecto">
+                        <img src="img/proyectos/proyecto9a.png" class="hover" alt="Proyecto hover">
                     </a>
                     <h4>ZZZETA ✧</h4>
                     <p>Identidad visual para festival de cine argentino, que celebra la lentitud como parte del ritmo.
@@ -176,20 +171,18 @@
             </div>
             <h3>࣪ ₊ ✶ ⭑ animaciones ₊ ✶ ⭑ </h3>
             <div class="animaciones">
-                <video src="img/animacion1.mp4" controls></video>
-                <video src="img/animacion2.mp4" controls></video>
-                <video src="img/animacion3.mp4" controls></video>
+                <video src="img/proyectos/animacion1.mp4" controls></video>
+                <video src="img/proyectos/animacion2.mp4" controls></video>
+                <video src="img/proyectos/animacion3.mp4" controls></video>
             </div>
             <div class="my-slider">
-                <div> <video src="img/animacion1.mp4" controls></video></div>
-                <div> <video src="img/animacion2.mp4" controls></video></div>
-                <div> <video src="img/animacion3.mp4" controls></video></div>
+                <div> <video src="img/proyectos/animacion1.mp4" controls></video></div>
+                <div> <video src="img/proyectos/animacion2.mp4" controls></video></div>
+                <div> <video src="img/proyectos/animacion3.mp4" controls></video></div>
             </div>
 
         </section>
-        <article class="imaginacion">
-            <blockquote> El poder de la imaginación nos hace infinitos. </blockquote> <!--este blockquote puede estar sin el article, le faltaría una altura en vh-->
-        </article>
+            <blockquote class="imaginacion"> El poder de la imaginación nos hace infinitos. </blockquote>
         <article class="contactoboton">
             <a href="contacto.html">
                 <h3> Querés que tus ideas se vuelvan un gran diseño? Contactame acá!</h3>
@@ -200,42 +193,39 @@
     <footer>
         <div class="logos">
             <a target="_blank" href="https://www.behance.net/brichi">
-                <img src="img/behance.svg" alt="Behance">
+                <img src="img/footer-header/behance.svg" alt="Behance">
             </a>
             <a target="_blank" href="https://www.instagram.com/brichidg/">
-                <img src="img/instagram.svg" alt="Instagram">
+                <img src="img/footer-header/instagram.svg" alt="Instagram">
             </a>
             <a target="_blank" href="https://www.linkedin.com/in/brisa-pereyra-brichi">
-                <img src="img/linkedin.svg" alt="Linkedin">
+                <img src="img/footer-header/linkedin.svg" alt="Linkedin">
             </a>
             <a target="_blank" href="mailto:brisaaylen_22@hotmail.com">
-                <img src="img/mail.svg" alt="Mail"> <!--el ícono del mail tiene valores de línea muy finos y se van de sistema al lado de los otros-->
+                <img src="img/footer-header/mail.svg" alt="Mail">
             </a>
         </div>
-        <div> <!--este div está de más-->
-            <p>Realizado por Brisa Pereyra :)</p>
-        </div>
+        <p>Realizado por Brisa Pereyra :)</p>
     </footer>
 
-<!-- alo!! acá me puse a investigar y encontré un carrousel en git que me gustó asique seguí las instrucciones que aparecían en el release. Intenté con los archivos pero no me salió, asique probé esta forma y pude, estaría mal? pude aplicar las configuraciones en mi css, necesito si o si hacerlo con archivos jquery? --> <!--está perfecto, no hace falta que lo hagas en jquery-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
 
-<script>
-    var slider = tns({
-        container: '.my-slider',
-        items: 1,
-        slideBy: 1,
-        loop: false,
-        rewind: true,
-        autoplay: false,
-        controls: true,
-        controlsText: ['←', '→'],
-        nav: false,
-        mouseDrag: true,
-        speed: 400,
-        gutter: 0
-    });
-</script>
+    <script>
+        var slider = tns({
+            container: '.my-slider',
+            items: 1,
+            slideBy: 1,
+            loop: false,
+            rewind: true,
+            autoplay: false,
+            controls: true,
+            controlsText: ['←', '→'],
+            nav: false,
+            mouseDrag: true,
+            speed: 400,
+            gutter: 0
+        });
+    </script>
 </body>
 
 </html>

@@ -45,7 +45,7 @@
     font-style: normal;
 }
 
-/*aca empiezan las aplicaciones*/
+/*APLICACIONES*/
 
 * {
     margin: 0;
@@ -53,15 +53,13 @@
 
 main {
     font-family: 'Mori Regular', "IBM Plex Sans", sans-serif;
-    background-color: #000000; /* no produce cambios */
-    padding-top: 70px; /* entiendo que este padding top es para que se respete el tamaño del header y no se pise pero está generando que parezca que el hero es más grande de lo que vos querés que sea (los 100vh) hay una forma más linda de hacer esto y es con calc pero lo deberías aplicar en el hero así que la explicación te la dejo más abajo*/
     flex: 1;
 }
 
 body {
-    cursor: url("img/cursor.png"), auto;
+    cursor: url("img/cursor-favicon/cursor.png"), auto;
     min-height: 100vh;
-    background-color: #000; /* no produce cambios*/
+    background-color: #000;
     display: flex;
     flex-direction: column;
 }
@@ -69,7 +67,7 @@ body {
 /*HEADER*/
 
 header {
-    background-color:#F87A63;
+    background-color: #F87A63;
     padding: 10px 0px;
     position: fixed;
     width: 100%;
@@ -94,7 +92,7 @@ header {
 a:hover {
     color: #FEE69C;
     transition: .3s;
-    cursor: url("img/cursor2.png"), pointer;
+    cursor: url("img/cursor-favicon/cursor2.png"), pointer;
 }
 
 .logo {
@@ -152,8 +150,6 @@ footer img {
 }
 
 /*TIPOGRAFÍA*/
-/* acá hice lo que me habías comentado sobre la superposicion y agregar el h1 pero me viene generando muchos dramas en cuanto a tamaños tipográficos, segun google esa propiedad de clamp hace que mas o menos se ajuste, porque si le pongo tamaño fijo me queda (misteriosamente) muy chico si lo quiero dejar en una sola linea*/
-/* te quedó muy bien el resultado final, dejalo así */
 
 h1 {
     font-family: 'Mango Extralight', "IBM Plex Sans", sans-serif;
@@ -234,7 +230,7 @@ span {
 .contacto a {
     font-family: 'Mango', "Climate Crisis", sans-serif;
     font-size: 2.3rem;
-    color:#FEE69C; 
+    color: #FEE69C;
     text-decoration: none;
     padding-left: 30px;
 }
@@ -244,15 +240,19 @@ span {
     padding: 10px 0px;
 }
 
-.experienciaboton a {
-    text-decoration: none;
+.formacionboton h3,
+.experienciaboton h3 {
     text-transform: uppercase;
+    background-color: #FEE69C;
+    padding: 35px 60px;
+    margin: 40px 0px;
 }
 
-.formacionboton a {
-    text-decoration: none;
-    text-align: right;
-    text-transform: uppercase;
+.formacionboton:hover h3,
+.experienciaboton:hover h3 {
+    background-color: #F87A63;
+    color: #FEE69C;
+    transition: .3s;
 }
 
 .contactoboton {
@@ -262,16 +262,24 @@ span {
     align-items: center;
     justify-content: center;
     margin: 60px;
+    transition: .3s;
 }
 
 .contactoboton a {
-    color: #000000;
-    display: flex;
-    justify-content: center;
+    text-decoration: none;
 }
 
 .contactoboton h3 {
     color: #000000;
+    transition: .3s;
+}
+
+.contactoboton:hover {
+    background-color: #D32E05;
+}
+
+.contactoboton:hover h3 {
+    color: #FEE69C;
 }
 
 #proyectos h3 {
@@ -301,11 +309,7 @@ span {
 .hero {
     position: relative;
     width: 100%;
-    height: 100vh; /* el valor calc está bueno para que se hagan cálculos matemáticos en base a los parámetros que quieras, en este caso queremos que el hero tenga el tamaño del viewport pero se está sumando la altura del header, entonces necesitamos que sean los 100vh menos la altura del header, entonces con calc podemos expresar esto así:
-    
-    height: calc(100vh - 55px); 
-    
-    acá se hace automáticamente y se aplica para tener mejor coherencia, los 55px los tomé del inspector que dice que es la altura total con todos los parámetros. tené cuidado con los espacios que usa porque sino no funciona*/
+    height: calc(100vh);
     overflow: hidden;
 }
 
@@ -334,6 +338,7 @@ span {
     left: 50%;
     z-index: 4;
     font-size: 2rem;
+    text-decoration: none;
     color: #000000;
     animation: bajar 1.5s infinite;
 }
@@ -368,10 +373,8 @@ span {
 }
 
 blockquote {
-    font-family: 'Mori Regular', "IBM Plex Sans", sans-serif; /* no repitas! esto ya está en el main */
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
     color: #FEE69C;
-    margin: 0; /*no repitas!*/
     text-align: center;
 }
 
@@ -393,24 +396,15 @@ blockquote {
 }
 
 .descripcion {
-    display: flex; /* por qué un texto tiene flex? */
-    flex-direction: column;
     text-align: center;
     color: #F87A63;
-    max-width: 1000px;
     padding: 50px;
     margin: auto;
 }
 
+.formacionboton,
 .experienciaboton {
-    background-color: #FEE69C;
-    padding: 50px 80px;
-    margin: 55px 0px;
-}
-/* si experienciaboton y formacionboton tienen las mismas propiedades te conviene definirlos de una vez y sólo cambiar la alineación, y al margin aplicalo al padre. además estaría bueno que le sumes un hover para que se entienda que es clickeable */
-.formacionboton {
-    background-color: #FEE69C;
-    padding: 50px 105px;
+    text-decoration: none;
 }
 
 .resumen {
@@ -428,7 +422,6 @@ blockquote {
 
 #proyectos {
     display: flex;
-    flex-wrap: wrap; /* esta propiedad está de más */
     flex-direction: column;
     background-color: #FEE69C;
     padding: 30px;
@@ -516,8 +509,10 @@ blockquote {
 .experiencia {
     display: flex;
     flex-direction: column;
-    background:#D32E05;
+    background: #D32E05;
     padding: 50px;
+    min-height: calc(100vh + 140px);
+    justify-content: space-evenly;
 }
 
 .item-acontenedor,
@@ -554,11 +549,11 @@ blockquote {
 /* FORMULARIO */
 
 .contacto {
-    background-color: #000000;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     padding: 70px;
-    
+    min-height: calc(100vh - 150px);
+    justify-content: center;
 }
 
 .contactocontenedor {
@@ -566,7 +561,6 @@ blockquote {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    /*esta página al tener poco contenido queda descentrada, capaz podés meter una altura con calc o algo de flex desde main, le pasa lo mismo a la parte de experiencia en pantallas grandes*/
 }
 
 #form {
@@ -614,7 +608,7 @@ form {
 }
 
 /*MEDIA QUERIES*/
-/*sé que con lo que vimos en los videos hay anchos definidos de pantalla, pero me guié por los momentos donde las cosas dejaban de funcionar y los fui ajustando a partir de ahi, a ver si puede ser mas responsive aún*/
+/*me guié por los momentos donde las cosas dejaban de funcionar y los fui ajustando a partir de ahi, a ver si puede ser mas responsive aún*/
 
 @media screen and (max-width:760px) {
 
@@ -700,9 +694,9 @@ form {
     .microplasticos,
     .todoesoquesobra,
     .zzzeta {
-    width: 97%;
-    max-width: 544px;
-    min-width: 260px;
+        width: 97%;
+        max-width: 544px;
+        min-width: 260px;
     }
 
     .base,
@@ -719,16 +713,12 @@ form {
         text-align: center;
     }
 
-    .formacionboton,
-    .experienciaboton {
-        padding: 25px;
-    }
-
     .formacion a,
     .experiencia a,
     .contacto a {
         font-family: 'Mango', "Climate Crisis", sans-serif;
         font-size: 2rem;
+        color:#F87A63;
     }
 
     .item-acontenedor,
@@ -739,12 +729,24 @@ form {
     .item-2contenedor {
         padding: 20px 0px;
         margin: 0px;
-        background: #F87A63;
+        background:#D32E05;
     }
 
     .formacion h3,
     .experiencia h3 {
         padding: 0px;
+    }
+
+    .experiencia p,
+    .formacion p,
+    .experiencia li,
+    .formacion h4,
+    .experiencia h4,
+    .formacion h5,
+    .experiencia h5,
+    .formacion h4,
+    .experiencia h4 {
+        color:#FEE69C;
     }
 
     main {
@@ -797,8 +799,8 @@ form {
         align-items: center;
         justify-content: center;
         font-size: 1.7rem;
-        color:#FEE69C;
-        background-color:#D32E05;
+        color: #FEE69C;
+        background-color: #D32E05;
     }
 }
 
