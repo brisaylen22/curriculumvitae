@@ -363,13 +363,25 @@ span {
 .marcapersonal {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 20px;
-    padding: 40px;
+    padding: 60px;
 }
 
-.marcapersonal img {
-    height: auto;
+.estrella {
+    font-size: 8rem;
+    color: #FEE69C;
+    animation: girar 5s linear infinite;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 blockquote {
@@ -551,8 +563,8 @@ blockquote {
 .contacto {
     display: flex;
     flex-direction: column;
-    padding: 70px;
     min-height: calc(100vh - 150px);
+    padding: 100px 50px 50px 50px;
     justify-content: center;
 }
 
