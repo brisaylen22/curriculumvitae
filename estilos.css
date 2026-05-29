@@ -68,7 +68,7 @@ body {
 
 header {
     background-color: #F87A63;
-    padding: 10px 0px;
+    padding: 10px 0;
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -296,9 +296,8 @@ span {
 
 .hero h1 {
     position: absolute;
-    top: 50%;
+    top: calc(50% + 25px);
     left: 50%;
-    z-index: 2;
     transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
@@ -309,7 +308,8 @@ span {
 .hero {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 55px);
+    margin-top: 55px;
     overflow: hidden;
 }
 
@@ -334,7 +334,7 @@ span {
 
 .flechas {
     position: absolute;
-    bottom: 120px;
+    bottom: 70px;
     left: 50%;
     z-index: 4;
     font-size: 2rem;
@@ -761,11 +761,6 @@ form {
         color:#FEE69C;
     }
 
-    main {
-        padding-top: 50px;
-        flex: 1;
-    }
-
     .item-1,
     .item-2,
     .item-a,
@@ -830,29 +825,25 @@ form {
         height: 35px;
     }
 
-    .hero h1 {
-        line-height: 14rem;
-        top: 50%;
-        font-size: 18rem;
-        padding-left: 70px;
+    .hero h1{
+    font-size: 14.5rem;
+    line-height: 11rem;
     }
+
 }
 
 @media screen and (max-width:380px) {
 
-    .hero h1 {
-        line-height: 12rem;
-        top: 50%;
-        font-size: 16rem;
-        padding-left: 80px;
-    }
-
     nav {
-        gap: 16px;
+        gap: 14px;
     }
 
     .encabezado a {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
+    .hero h1{
+    font-size: 13rem;
+    line-height: 10rem;
+    }
 }
